@@ -1,4 +1,4 @@
-import { BookRecord } from "./BookRecord";
+import { BookRecord } from './BookRecord'
 
 export class BookRecords {
   constructor(

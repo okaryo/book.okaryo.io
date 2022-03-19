@@ -1,8 +1,8 @@
-import { BookRecords } from "../model/BookRecords";
-import BookRecordsJson from "../data/book-list.json"
-import { BookRecord } from "../model/BookRecord";
-import { Book } from "../model/Book";
-import { Author } from "../model/Author";
+import { BookRecords } from '../model/BookRecords'
+import BookRecordsJson from '../data/book-list.json'
+import { BookRecord } from '../model/BookRecord'
+import { Book } from '../model/Book'
+import { Author } from '../model/Author'
 
 export class BookRecordsRepository {
   static getBookRecords = (): BookRecords => {
