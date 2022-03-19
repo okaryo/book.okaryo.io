@@ -7,7 +7,7 @@ const Footer = () => {
         <Typography variant="caption" component="p">
           Copyright ©{new Date().getFullYear()}{' '}
           <Link
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+            href="https://okaryo.io"
             target="_blank"
             rel="noopener noreferrer"
             underline="none"
