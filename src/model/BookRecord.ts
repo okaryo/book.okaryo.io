@@ -6,4 +6,8 @@ export class BookRecord {
     readonly review: string,
     readonly book: Book
   ) {}
+
+  get page(): number {
+    return this.book.page
+  }
 }
