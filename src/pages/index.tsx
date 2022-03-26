@@ -10,7 +10,7 @@ export default function Home() {
 
       <main>
         <AppBar position="static" sx={{p: 1}}>
-          <Typography variant="h6" component="h1">OKARYO BOOK</Typography>
+          <Typography variant="h6" component="h1">OKARYO BOOKSHELF</Typography>
         </AppBar>
 
         <BookList />
