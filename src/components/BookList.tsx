@@ -6,10 +6,10 @@ const BookList = () => {
     <Container sx={{p: 2}}>
       <List>
         {
-          BookRecordsRepository.getBookRecords().values.map(record => {
+          BookRecordsRepository.getBookRecords().values.map((record, index) => {
             const dateText = record.formatDate
             return (
-              <ListItem style={{borderBottom: '1px solid #D2D2D2'}} disablePadding >
+              <ListItem key={index} style={{borderBottom: '1px solid #D2D2D2'}} disablePadding >
                 <ListItemButton style={{ width: '100%' }} sx={{pr: 0, pl: 0}}>
                   <ListItemText
                     style={{ overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis' }}
