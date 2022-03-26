@@ -7,7 +7,7 @@ const BookList = () => {
       <List>
         {
           BookRecordsRepository.getBookRecords().values.map(record => {
-            const dateText = `${record.date.getFullYear()}年${record.date.getMonth()+1}月${record.date.getDate()}日`
+            const dateText = record.formatDate
             return (
               <ListItem style={{borderBottom: '1px solid #D2D2D2'}} disablePadding >
                 <ListItemButton style={{ width: '100%' }} sx={{pr: 0, pl: 0}}>

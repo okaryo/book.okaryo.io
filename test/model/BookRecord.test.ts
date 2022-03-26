@@ -28,12 +28,12 @@ describe('#formatDate', () => {
   })
 
   describe('when date is null', () => {
-    test('should return unknown string', () => {
+    test('should return no date', () => {
       const book = new Book(10, 'title', 'url', new Author('name'))
       const bookRecord = new BookRecord(null, 'review', book)
 
       const actual = bookRecord.formatDate
-      const expected = 'Unknown'
+      const expected = 'No Date'
 
       expect(actual).toBe(expected)
     })

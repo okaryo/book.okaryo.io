@@ -12,7 +12,7 @@ export class BookRecord {
   }
 
   get formatDate(): string {
-    if (this.date === null) return 'Unknown'
+    if (this.date === null) return 'No Date'
     return `${this.date.getFullYear()}年${this.date.getMonth() + 1}月${this.date.getDate()}日`
   }
 }
