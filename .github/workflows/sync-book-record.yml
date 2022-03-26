@@ -5,27 +5,28 @@ on:
     types: [record-updated]
 
 jobs:
-  runs-on: ubuntu-latest
-  steps:
-    - uses: actions/checkout@v2
-    - name: clone BookMeterRecordScraping
-      uses: actions/checkout@v2
-      with:
-        repository: okaryo/BookMeterRecordScraping
-        path: scraping
-        token: ${{ secrets.REPO_ACCESS_TOKEN }}
-    - name: copy book record
-      run: cp scraping/__generated__/main.json ./src/data/book-list.json
-    - name: clean cloned repository
-      run: rm -rf scraping
-    - name: setup git
-      run: |
-        git config --local user.email "okaryotr@gmail.com"
-        git config --local user.name "okaryo"
-        git config --local pull.rebase false
-    - name: git push
-      run: |
-        git add .
-        git commit -m "[update] book record"
-        git pull
-        git push origin main
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: clone BookMeterRecordScraping
+        uses: actions/checkout@v2
+        with:
+          repository: okaryo/BookMeterRecordScraping
+          path: scraping
+          token: ${{ secrets.REPO_ACCESS_TOKEN }}
+      - name: copy book record
+        run: cp scraping/__generated__/main.json ./src/data/book-list.json
+      - name: clean cloned repository
+        run: rm -rf scraping
+      - name: setup git
+        run: |
+          git config --local user.email "okaryotr@gmail.com"
+          git config --local user.name "okaryo"
+          git config --local pull.rebase false
+      - name: git push
+        run: |
+          git add .
+          git commit -m "[update] book record"
+          git pull
+          git push origin main
