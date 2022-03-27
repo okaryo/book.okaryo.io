@@ -12,9 +12,9 @@ const BookList = () => {
           const dateText = record.formatDate
           return (
             <ListItem key={index} style={{borderBottom: '1px solid #D2D2D2'}} disablePadding >
-              <ListItemButton sx={{pr: 0, pl: 0}}>
+              <ListItemButton style={{ width: '100%' }} sx={{pr: 0, pl: 0}}>
                 <ListItemText
-                  style={{ overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis' }}
+                  style={{ width: '100%', overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis' }}
                   primary={
                     <Link
                       href={record.book.url}
