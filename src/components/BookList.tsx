@@ -1,4 +1,4 @@
-import { Link, List, ListItem, ListItemButton, ListItemText } from '@mui/material'
+import { Link, List, ListItem, ListItemButton, ListItemText, Typography } from '@mui/material'
 import { useSelector } from 'react-redux'
 import { RootState } from '../store'
 
@@ -14,15 +14,20 @@ const BookList = () => {
             <ListItem key={index} style={{borderBottom: '1px solid #D2D2D2'}} disablePadding >
               <ListItemButton style={{ width: '100%' }} sx={{pr: 0, pl: 0}}>
                 <ListItemText
-                  style={{ width: '100%', overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis' }}
                   primary={
                     <Link
                       href={record.book.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      underline="none"
+                      target='_blank'
+                      rel='noopener noreferrer'
+                      underline='none'
                     >
-                      {record.book.title}
+                      <Typography
+                        variant='subtitle1'
+                        component='p'
+                        style={{ overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis' }}
+                      >
+                        {record.book.title}
+                      </Typography>
                     </Link>
                   }
                   secondary={dateText}
