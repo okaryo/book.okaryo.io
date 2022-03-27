@@ -10,7 +10,7 @@ export class BookRecordsRepository {
     const records = json.records.map(record => {
       return new BookRecord(
         record.date === null ? null : new Date(record.date),
-        record.review,
+        record.review === '' ? 'No Review' : record.review,
         new Book(
           record.book.page,
           record.book.title,
