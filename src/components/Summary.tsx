@@ -1,6 +1,6 @@
-import { Paper, Stack, Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from "@mui/material"
-import { useSelector } from "react-redux"
-import { RootState } from "../store"
+import { Paper, Stack, Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from '@mui/material'
+import { useSelector } from 'react-redux'
+import { RootState } from '../store'
 
 const Summary = () => {
   const bookRecords = useSelector((state: RootState) => state.domain.bookRecords)

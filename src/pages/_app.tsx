@@ -1,10 +1,10 @@
-import { Provider } from "react-redux"
-import { useStore } from "../store"
+import { Provider } from 'react-redux'
+import { useStore } from '../store'
 import Meta from '../components/Meta'
-import Navigation from "../components/Navigation"
-import { AppProps } from "next/app"
-import { Container, Divider } from "@mui/material"
-import Footer from "../components/Footer"
+import Navigation from '../components/Navigation'
+import { AppProps } from 'next/app'
+import { Container, Divider } from '@mui/material'
+import Footer from '../components/Footer'
 
 const App = ({ Component, pageProps }: AppProps) => {
   const store = useStore()

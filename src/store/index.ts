@@ -1,6 +1,6 @@
-import { combineReducers, configureStore, EnhancedStore } from "@reduxjs/toolkit";
-import { domainReducer } from "./domain";
-import { uiReducer } from "./ui";
+import { combineReducers, configureStore, EnhancedStore } from '@reduxjs/toolkit'
+import { domainReducer } from './domain'
+import { uiReducer } from './ui'
 
 const rootReducer = combineReducers({
   ui: uiReducer,

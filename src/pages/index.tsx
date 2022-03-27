@@ -1,6 +1,6 @@
 import Summary from '../components/Summary'
 
-const  Home = () => {
+const Home = () => {
   return <Summary />
 }
 

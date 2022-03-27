@@ -1,6 +1,6 @@
-import { Box, Button, Stack, Typography } from "@mui/material"
-import Link from "next/link";
-import { useRouter } from "next/router";
+import { Box, Button, Stack, Typography } from '@mui/material'
+import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 type TabButtonProps = {
   path: string,
@@ -11,7 +11,7 @@ const Header = () => {
   const router = useRouter()
 
   const TabButton = (props: TabButtonProps) => {
-    let isActive = router.pathname === props.path
+    const isActive = router.pathname === props.path
 
     return (
       <Link href={props.path}>
@@ -20,7 +20,7 @@ const Header = () => {
         </Button>
       </Link>
     )
-  } 
+  }
 
   return (
     <Box>
