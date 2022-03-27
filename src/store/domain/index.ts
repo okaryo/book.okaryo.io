@@ -1,6 +1,6 @@
-import { createSlice } from "@reduxjs/toolkit";
-import { BookRecords } from "../../model/BookRecords";
-import { BookRecordsRepository } from "../../repository/BookRecordsRepository";
+import { createSlice } from '@reduxjs/toolkit'
+import { BookRecords } from '../../model/BookRecords'
+import { BookRecordsRepository } from '../../repository/BookRecordsRepository'
 
 type State = {
   bookRecords: BookRecords,
