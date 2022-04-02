@@ -70,7 +70,7 @@ describe('#totalCountByYear', () => {
         'review',
         new Book(10, 'title', 'url', new Author('name'))
       ),
-    ]).totalCountByYear(2022)
+    ]).totalCountByYear(new Date('2022-03-30'))
     const expected = 1
 
     expect(actual).toBe(expected)
@@ -95,7 +95,7 @@ describe('#totalPageByYear', () => {
         'review',
         new Book(30, 'title', 'url', new Author('name'))
       ),
-    ]).totalPageByYear(2022)
+    ]).totalPageByYear(new Date('2022-03-30'))
     const expected = 30
 
     expect(actual).toBe(expected)
@@ -120,7 +120,7 @@ describe('#totalCountByMonth', () => {
         'review',
         new Book(30, 'title', 'url', new Author('name'))
       ),
-    ]).totalCountByMonth(2022, 3)
+    ]).totalCountByMonth(new Date('2022-03-30'))
     const expected = 1
 
     expect(actual).toBe(expected)
@@ -145,7 +145,7 @@ describe('#totalPageByMonth', () => {
         'review',
         new Book(31, 'title', 'url', new Author('name'))
       ),
-    ]).totalPageByMonth(2022, 3)
+    ]).totalPageByMonth(new Date('2022-03-30'))
     const expected = 31
 
     expect(actual).toBe(expected)

@@ -19,7 +19,8 @@ export class BookRecords {
     }, 0)
   }
 
-  totalCountByYear(year: number): number {
+  totalCountByYear(date: Date): number {
+    const year = date.getFullYear()
     return this.values.reduce((sum, record) => {
       if (record.date !== null && record.date.getFullYear() === year) {
         return sum + 1
@@ -28,7 +29,8 @@ export class BookRecords {
     }, 0)
   }
 
-  totalPageByYear(year: number): number {
+  totalPageByYear(date: Date): number {
+    const year = date.getFullYear()
     return this.values.reduce((sum, record) => {
       if (record.date !== null && record.date.getFullYear() === year) {
         return sum + record.page
@@ -37,18 +39,24 @@ export class BookRecords {
     }, 0)
   }
 
-  totalCountByMonth(year: number, month: number): number {
+  totalCountByMonth(date: Date): number {
+    const year = date.getFullYear()
+    const month = date.getMonth()
+
     return this.values.reduce((sum, record) => {
-      if (record.date !== null && record.date.getFullYear() === year && record.date.getMonth() + 1 === month) {
+      if (record.date !== null && record.date.getFullYear() === year && record.date.getMonth() === month) {
         return sum + 1
       }
       return sum
     }, 0)
   }
 
-  totalPageByMonth(year: number, month: number): number {
+  totalPageByMonth(date: Date): number {
+    const year = date.getFullYear()
+    const month = date.getMonth()
+
     return this.values.reduce((sum, record) => {
-      if (record.date !== null && record.date.getFullYear() === year && record.date.getMonth() + 1 === month) {
+      if (record.date !== null && record.date.getFullYear() === year && record.date.getMonth() === month) {
         return sum + record.page
       }
       return sum
