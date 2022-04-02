@@ -5,8 +5,7 @@ import { RootState } from '../store'
 const Summary = () => {
   const bookRecords = useSelector((state: RootState) => state.domain.bookRecords)
   const currentDate = new Date()
-  const currentYear = currentDate.getFullYear()
-  const currentMonth = currentDate.getMonth() + 1
+  const lastMonthDate = new Date(currentDate.getFullYear(), currentDate.getMonth() - 1, currentDate.getDay())
 
   return (
     <Stack>
@@ -29,14 +28,20 @@ const Summary = () => {
 
               <TableRow sx={{'&:last-child td, &:last-child th': { border: 0 } }}>
                 <TableCell component="th" scope="row">今年の記録</TableCell>
-                <TableCell align="center">{bookRecords.totalCountByYear(currentYear)}冊</TableCell>
-                <TableCell align="center">{bookRecords.totalPageByYear(currentYear)}ページ</TableCell>
+                <TableCell align="center">{bookRecords.totalCountByYear(currentDate)}冊</TableCell>
+                <TableCell align="center">{bookRecords.totalPageByYear(currentDate)}ページ</TableCell>
               </TableRow>
 
               <TableRow sx={{'&:last-child td, &:last-child th': { border: 0 } }}>
                 <TableCell component="th" scope="row">今月の記録</TableCell>
-                <TableCell align="center">{bookRecords.totalCountByMonth(currentYear, currentMonth)}冊</TableCell>
-                <TableCell align="center">{bookRecords.totalPageByMonth(currentYear, currentMonth)}ページ</TableCell>
+                <TableCell align="center">{bookRecords.totalCountByMonth(currentDate)}冊</TableCell>
+                <TableCell align="center">{bookRecords.totalPageByMonth(currentDate)}ページ</TableCell>
+              </TableRow>
+
+              <TableRow sx={{'&:last-child td, &:last-child th': { border: 0 } }}>
+                <TableCell component="th" scope="row">先月の記録</TableCell>
+                <TableCell align="center">{bookRecords.totalCountByMonth(lastMonthDate)}冊</TableCell>
+                <TableCell align="center">{bookRecords.totalPageByMonth(lastMonthDate)}ページ</TableCell>
               </TableRow>
             </TableBody>
           </Table>
