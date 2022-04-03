@@ -5,7 +5,7 @@ import { RootState } from '../store'
 const Summary = () => {
   const bookRecords = useSelector((state: RootState) => state.domain.bookRecords)
   const currentDate = new Date()
-  const lastMonthDate = new Date(currentDate.getFullYear(), currentDate.getMonth() - 1, currentDate.getDay())
+  const lastMonthDate = new Date(currentDate.getFullYear(), currentDate.getMonth() - 1, currentDate.getDate())
 
   return (
     <Stack>
