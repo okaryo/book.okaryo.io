@@ -18,12 +18,16 @@ describe('#totalCount', () => {
       new BookRecord(
         new Date(2022, 3, 20),
         'review',
-        new Book(10, 'title', 'url', new Author('name'))
+        new Book(10, 'title', 'url', new Author('name')),
+        'Paper',
+        false
       ),
       new BookRecord(
         new Date(2022, 3, 20),
         'review',
-        new Book(10, 'title', 'url', new Author('name'))
+        new Book(10, 'title', 'url', new Author('name')),
+        'Paper',
+        false
       ),
     ]).totalCount
     const expected = 2
@@ -38,12 +42,16 @@ describe('#totalPage', () => {
       new BookRecord(
         new Date(2022, 3, 20),
         'review',
-        new Book(10, 'title', 'url', new Author('name'))
+        new Book(10, 'title', 'url', new Author('name')),
+        'Paper',
+        false
       ),
       new BookRecord(
         new Date(2022, 3, 20),
         'review',
-        new Book(10, 'title', 'url', new Author('name'))
+        new Book(10, 'title', 'url', new Author('name')),
+        'Paper',
+        false
       ),
     ]).totalPage
     const expected = 20
@@ -58,17 +66,23 @@ describe('#totalCountByYear', () => {
       new BookRecord(
         new Date(2020, 3, 20),
         'review',
-        new Book(10, 'title', 'url', new Author('name'))
+        new Book(10, 'title', 'url', new Author('name')),
+        'Paper',
+        false
       ),
       new BookRecord(
         new Date(2021, 3, 20),
         'review',
-        new Book(10, 'title', 'url', new Author('name'))
+        new Book(10, 'title', 'url', new Author('name')),
+        'Paper',
+        false
       ),
       new BookRecord(
         new Date(2022, 3, 20),
         'review',
-        new Book(10, 'title', 'url', new Author('name'))
+        new Book(10, 'title', 'url', new Author('name')),
+        'Paper',
+        false
       ),
     ]).totalCountByYear(new Date('2022-03-30'))
     const expected = 1
@@ -83,17 +97,23 @@ describe('#totalPageByYear', () => {
       new BookRecord(
         new Date(2020, 3, 20),
         'review',
-        new Book(13, 'title', 'url', new Author('name'))
+        new Book(13, 'title', 'url', new Author('name')),
+        'Paper',
+        false
       ),
       new BookRecord(
         new Date(2021, 3, 20),
         'review',
-        new Book(6, 'title', 'url', new Author('name'))
+        new Book(6, 'title', 'url', new Author('name')),
+        'Paper',
+        false
       ),
       new BookRecord(
         new Date(2022, 3, 20),
         'review',
-        new Book(30, 'title', 'url', new Author('name'))
+        new Book(30, 'title', 'url', new Author('name')),
+        'Paper',
+        false
       ),
     ]).totalPageByYear(new Date('2022-03-30'))
     const expected = 30
@@ -108,17 +128,23 @@ describe('#totalCountByMonth', () => {
       new BookRecord(
         new Date(2022, 1, 20),
         'review',
-        new Book(13, 'title', 'url', new Author('name'))
+        new Book(13, 'title', 'url', new Author('name')),
+        'Paper',
+        false
       ),
       new BookRecord(
         new Date(2022, 2, 20),
         'review',
-        new Book(6, 'title', 'url', new Author('name'))
+        new Book(6, 'title', 'url', new Author('name')),
+        'Paper',
+        false
       ),
       new BookRecord(
         new Date(2022, 3, 20),
         'review',
-        new Book(30, 'title', 'url', new Author('name'))
+        new Book(30, 'title', 'url', new Author('name')),
+        'Paper',
+        false
       ),
     ]).totalCountByMonth(new Date('2022-03-30'))
     const expected = 1
@@ -133,17 +159,23 @@ describe('#totalPageByMonth', () => {
       new BookRecord(
         new Date('2022-01-20'),
         'review',
-        new Book(13, 'title', 'url', new Author('name'))
+        new Book(13, 'title', 'url', new Author('name')),
+        'Paper',
+        false
       ),
       new BookRecord(
         new Date('2022-02-20'),
         'review',
-        new Book(6, 'title', 'url', new Author('name'))
+        new Book(6, 'title', 'url', new Author('name')),
+        'Paper',
+        false
       ),
       new BookRecord(
         new Date('2022-03-20'),
         'review',
-        new Book(31, 'title', 'url', new Author('name'))
+        new Book(31, 'title', 'url', new Author('name')),
+        'Paper',
+        false
       ),
     ]).totalPageByMonth(new Date('2022-03-30'))
     const expected = 31

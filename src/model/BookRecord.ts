@@ -4,7 +4,9 @@ export class BookRecord {
   constructor(
     readonly date: Date | null,
     readonly review: string,
-    readonly book: Book
+    readonly book: Book,
+    readonly format: 'Paper' | 'Audible' | 'Kindle' | 'Ebook',
+    readonly isRereading: boolean,
   ) {}
 
   get page(): number {
