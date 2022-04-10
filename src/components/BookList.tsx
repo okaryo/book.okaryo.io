@@ -1,4 +1,4 @@
-import { Button, ButtonGroup, Link, List, ListItem, ListItemButton, ListItemText, ToggleButton, ToggleButtonGroup, Typography } from '@mui/material'
+import { Button, ButtonGroup, Chip, Link, List, ListItem, ListItemButton, ListItemText, Stack, ToggleButton, ToggleButtonGroup, Typography } from '@mui/material'
 import { Box } from '@mui/system'
 import { useState } from 'react'
 import { useSelector } from 'react-redux'
@@ -56,6 +56,22 @@ const BookList = () => {
         {
           bookRecords.values.map((record, index) => {
             const dateText = record.formatDate
+            var formatLabel: string
+            switch (record.format) {
+              case 'Paper':
+                formatLabel = '紙書籍'
+                break
+              case 'Audible':
+                formatLabel = 'Audible'
+                break
+              case 'Kindle':
+                formatLabel = 'Kindle'
+                break
+              case 'Ebook':
+                formatLabel = '電子書籍'
+                break
+            }
+
             return (
               <ListItem key={index} style={{borderBottom: '1px solid #D2D2D2'}} disablePadding >
                 <ListItemButton style={{ width: '100%' }} sx={{pr: 0, pl: 0}}>
@@ -76,7 +92,13 @@ const BookList = () => {
                         </Typography>
                       </Link>
                     }
-                    secondary={dateText}
+                    secondary={
+                      <Stack direction='row' spacing={1} alignItems='center'>
+                        <Typography variant='subtitle2' component='p'>{dateText}</Typography>
+                        <Chip label={formatLabel} size='small' color='primary' variant='outlined' />
+                        {record.isRereading &&  <Chip label='再読' size='small' color='success' variant='outlined' />}
+                      </Stack>
+                    }
                   />
                 </ListItemButton>
               </ListItem>
