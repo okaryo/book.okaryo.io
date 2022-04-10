@@ -1,4 +1,4 @@
-import { Button, ButtonGroup, Chip, Link, List, ListItem, ListItemButton, ListItemText, Stack, ToggleButton, ToggleButtonGroup, Typography } from '@mui/material'
+import { Chip, Link, List, ListItem, ListItemButton, ListItemText, Stack, ToggleButton, ToggleButtonGroup, Typography } from '@mui/material'
 import { Box } from '@mui/system'
 import { useState } from 'react'
 import { useSelector } from 'react-redux'
@@ -11,7 +11,7 @@ const BookList = () => {
   const allBookRecords = useSelector((state: RootState) => state.domain.bookRecords)
   const [filterType, setFilterType] = useState<FilterType>('All')
 
-  var bookRecords: BookRecords
+  let bookRecords: BookRecords
   switch (filterType) {
     case 'All':
       bookRecords = allBookRecords
@@ -41,7 +41,7 @@ const BookList = () => {
         fullWidth
         color='primary'
         value={filterType}
-        onChange={(_, value) => setFilterType(value)}
+        onChange={(_, value: FilterType) => setFilterType(value)}
         style={{ textTransform: 'none' }}
       >
         <ToggleButton value="All">すべて</ToggleButton>
@@ -56,7 +56,7 @@ const BookList = () => {
         {
           bookRecords.values.map((record, index) => {
             const dateText = record.formatDate
-            var formatLabel: string
+            let formatLabel: string
             switch (record.format) {
               case 'Paper':
                 formatLabel = '紙書籍'
@@ -96,7 +96,7 @@ const BookList = () => {
                       <Stack direction='row' spacing={1} alignItems='center'>
                         <Typography variant='subtitle2' component='p'>{dateText}</Typography>
                         <Chip label={formatLabel} size='small' color='primary' variant='outlined' />
-                        {record.isRereading &&  <Chip label='再読' size='small' color='success' variant='outlined' />}
+                      {record.isRereading && <Chip label='再読' size='small' color='success' variant='outlined' />}
                       </Stack>
                     }
                   />

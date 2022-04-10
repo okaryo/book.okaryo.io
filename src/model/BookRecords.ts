@@ -64,27 +64,27 @@ export class BookRecords {
   }
 
   filterByPaperFormat(): BookRecords {
-    const records = this.values.filter(record => record.format === 'Paper');
+    const records = this.values.filter(record => record.format === 'Paper')
     return new BookRecords(records)
   }
 
   filterByAudibleFormat(): BookRecords {
-    const records = this.values.filter(record => record.format === 'Audible');
+    const records = this.values.filter(record => record.format === 'Audible')
     return new BookRecords(records)
   }
 
   filterByKindleFormat(): BookRecords {
-    const records = this.values.filter(record => record.format === 'Kindle');
+    const records = this.values.filter(record => record.format === 'Kindle')
     return new BookRecords(records)
   }
 
   filterByEbookFormat(): BookRecords {
-    const records = this.values.filter(record => record.format === 'Ebook');
+    const records = this.values.filter(record => record.format === 'Ebook')
     return new BookRecords(records)
   }
 
   filterByRereading(): BookRecords {
-    const records = this.values.filter(record => record.isRereading);
+    const records = this.values.filter(record => record.isRereading)
     return new BookRecords(records)
   }
 }
