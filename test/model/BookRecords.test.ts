@@ -368,3 +368,56 @@ describe('#filterByEbookFormat', () => {
     expect(actual).toStrictEqual(expected)
   })
 })
+
+describe('#filterByRereading', () => {
+  test('should return only rereading records', () => {
+    const actual = new BookRecords([
+      new BookRecord(
+        new Date('2022-01-20'),
+        'review',
+        new Book(13, 'title', 'url', new Author('name')),
+        'Paper',
+        false
+      ),
+      new BookRecord(
+        new Date('2022-02-20'),
+        'review',
+        new Book(6, 'title', 'url', new Author('name')),
+        'Audible',
+        true
+      ),
+      new BookRecord(
+        new Date('2022-03-20'),
+        'review',
+        new Book(31, 'title', 'url', new Author('name')),
+        'Ebook',
+        true
+      ),
+      new BookRecord(
+        new Date('2022-03-20'),
+        'review',
+        new Book(31, 'title', 'url', new Author('name')),
+        'Kindle',
+        false
+      ),
+    ]).filterByRereading()
+    const expected = new BookRecords([
+      new BookRecord(
+        new Date('2022-02-20'),
+        'review',
+        new Book(6, 'title', 'url', new Author('name')),
+        'Audible',
+        true
+      ),
+      new BookRecord(
+        new Date('2022-03-20'),
+        'review',
+        new Book(31, 'title', 'url', new Author('name')),
+        'Ebook',
+        true
+      ),
+    ])
+
+    expect(actual).toStrictEqual(expected)
+  })
+})

@@ -82,4 +82,9 @@ export class BookRecords {
     const records = this.values.filter(record => record.format === 'Ebook');
     return new BookRecords(records)
   }
+
+  filterByRereading(): BookRecords {
+    const records = this.values.filter(record => record.isRereading);
+    return new BookRecords(records)
+  }
 }
