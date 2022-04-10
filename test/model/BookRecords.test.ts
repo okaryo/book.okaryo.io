@@ -183,3 +183,188 @@ describe('#totalPageByMonth', () => {
     expect(actual).toBe(expected)
   })
 })
+
+describe('#filterByPaperFormat', () => {
+  test('should return only paper format records', () => {
+    const actual = new BookRecords([
+      new BookRecord(
+        new Date('2022-01-20'),
+        'review',
+        new Book(13, 'title', 'url', new Author('name')),
+        'Paper',
+        false
+      ),
+      new BookRecord(
+        new Date('2022-02-20'),
+        'review',
+        new Book(6, 'title', 'url', new Author('name')),
+        'Audible',
+        false
+      ),
+      new BookRecord(
+        new Date('2022-03-20'),
+        'review',
+        new Book(31, 'title', 'url', new Author('name')),
+        'Ebook',
+        false
+      ),
+      new BookRecord(
+        new Date('2022-03-20'),
+        'review',
+        new Book(31, 'title', 'url', new Author('name')),
+        'Kindle',
+        false
+      ),
+    ]).filterByPaperFormat()
+    const expected = new BookRecords([
+      new BookRecord(
+        new Date('2022-01-20'),
+        'review',
+        new Book(13, 'title', 'url', new Author('name')),
+        'Paper',
+        false
+      ),
+    ])
+
+    expect(actual).toStrictEqual(expected)
+  })
+})
+
+describe('#filterByAudibleFormat', () => {
+  test('should return only audible format records', () => {
+    const actual = new BookRecords([
+      new BookRecord(
+        new Date('2022-01-20'),
+        'review',
+        new Book(13, 'title', 'url', new Author('name')),
+        'Paper',
+        false
+      ),
+      new BookRecord(
+        new Date('2022-02-20'),
+        'review',
+        new Book(6, 'title', 'url', new Author('name')),
+        'Audible',
+        false
+      ),
+      new BookRecord(
+        new Date('2022-03-20'),
+        'review',
+        new Book(31, 'title', 'url', new Author('name')),
+        'Ebook',
+        false
+      ),
+      new BookRecord(
+        new Date('2022-03-20'),
+        'review',
+        new Book(31, 'title', 'url', new Author('name')),
+        'Kindle',
+        false
+      ),
+    ]).filterByAudibleFormat()
+    const expected = new BookRecords([
+      new BookRecord(
+        new Date('2022-02-20'),
+        'review',
+        new Book(6, 'title', 'url', new Author('name')),
+        'Audible',
+        false
+      ),
+    ])
+
+    expect(actual).toStrictEqual(expected)
+  })
+})
+
+
+describe('#filterByKindleFormat', () => {
+  test('should return only kindle format records', () => {
+    const actual = new BookRecords([
+      new BookRecord(
+        new Date('2022-01-20'),
+        'review',
+        new Book(13, 'title', 'url', new Author('name')),
+        'Paper',
+        false
+      ),
+      new BookRecord(
+        new Date('2022-02-20'),
+        'review',
+        new Book(6, 'title', 'url', new Author('name')),
+        'Audible',
+        false
+      ),
+      new BookRecord(
+        new Date('2022-03-20'),
+        'review',
+        new Book(31, 'title', 'url', new Author('name')),
+        'Ebook',
+        false
+      ),
+      new BookRecord(
+        new Date('2022-03-20'),
+        'review',
+        new Book(31, 'title', 'url', new Author('name')),
+        'Kindle',
+        false
+      ),
+    ]).filterByKindleFormat()
+    const expected = new BookRecords([
+      new BookRecord(
+        new Date('2022-03-20'),
+        'review',
+        new Book(31, 'title', 'url', new Author('name')),
+        'Kindle',
+        false
+      ),
+    ])
+
+    expect(actual).toStrictEqual(expected)
+  })
+})
+
+describe('#filterByEbookFormat', () => {
+  test('should return only ebook format records', () => {
+    const actual = new BookRecords([
+      new BookRecord(
+        new Date('2022-01-20'),
+        'review',
+        new Book(13, 'title', 'url', new Author('name')),
+        'Paper',
+        false
+      ),
+      new BookRecord(
+        new Date('2022-02-20'),
+        'review',
+        new Book(6, 'title', 'url', new Author('name')),
+        'Audible',
+        false
+      ),
+      new BookRecord(
+        new Date('2022-03-20'),
+        'review',
+        new Book(31, 'title', 'url', new Author('name')),
+        'Ebook',
+        false
+      ),
+      new BookRecord(
+        new Date('2022-03-20'),
+        'review',
+        new Book(31, 'title', 'url', new Author('name')),
+        'Kindle',
+        false
+      ),
+    ]).filterByEbookFormat()
+    const expected = new BookRecords([
+      new BookRecord(
+        new Date('2022-03-20'),
+        'review',
+        new Book(31, 'title', 'url', new Author('name')),
+        'Ebook',
+        false
+      ),
+    ])
+
+    expect(actual).toStrictEqual(expected)
+  })
+})
