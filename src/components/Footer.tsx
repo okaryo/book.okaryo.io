@@ -15,6 +15,9 @@ const Footer = () => {
             OKARYO
           </Link>
         </Typography>
+        <Typography variant="caption" component="p">
+          This site uses Google Analytics.
+        </Typography>
       </Box>
     </footer>
   )
