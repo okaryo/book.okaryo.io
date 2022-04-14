@@ -421,3 +421,76 @@ describe('#filterByRereading', () => {
     expect(actual).toStrictEqual(expected)
   })
 })
+
+describe('#searchByTitle', () => {
+  describe('when value is empty', () => {
+    test('should return same records', () => {
+      const actual = new BookRecords([
+        new BookRecord(
+          new Date('2022-01-20'),
+          'review',
+          new Book(13, 'title', 'url', new Author('name')),
+          'Paper',
+          false
+        ),
+        new BookRecord(
+          new Date('2022-02-20'),
+          'review',
+          new Book(6, 'title', 'url', new Author('name')),
+          'Audible',
+          true
+        ),
+      ]).searchByTitle('')
+      const expected = new BookRecords([
+        new BookRecord(
+          new Date('2022-01-20'),
+          'review',
+          new Book(13, 'title', 'url', new Author('name')),
+          'Paper',
+          false
+        ),
+        new BookRecord(
+          new Date('2022-02-20'),
+          'review',
+          new Book(6, 'title', 'url', new Author('name')),
+          'Audible',
+          true
+        ),
+      ])
+
+      expect(actual).toStrictEqual(expected)
+    })
+  })
+
+  describe('when value is not empty', () => {
+    test('should return records that has title including value', () => {
+      const actual = new BookRecords([
+        new BookRecord(
+          new Date('2022-01-20'),
+          'review',
+          new Book(13, 'hogehoge', 'url', new Author('name')),
+          'Paper',
+          false
+        ),
+        new BookRecord(
+          new Date('2022-02-20'),
+          'review',
+          new Book(6, 'fugafuga', 'url', new Author('name')),
+          'Audible',
+          true
+        ),
+      ]).searchByTitle('hoge')
+      const expected = new BookRecords([
+        new BookRecord(
+          new Date('2022-01-20'),
+          'review',
+          new Book(13, 'hogehoge', 'url', new Author('name')),
+          'Paper',
+          false
+        ),
+      ])
+
+      expect(actual).toStrictEqual(expected)
+    })
+  })
+})

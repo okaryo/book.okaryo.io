@@ -87,4 +87,11 @@ export class BookRecords {
     const records = this.values.filter(record => record.isRereading)
     return new BookRecords(records)
   }
+
+  searchByTitle(value: string): BookRecords {
+    if (value === '') return this
+
+    const records = this.values.filter((record) => record.book.title.includes(value))
+    return new BookRecords(records)
+  }
 }
