@@ -1,4 +1,6 @@
-import { Chip, Link, List, ListItem, ListItemButton, ListItemText, Stack, ToggleButton, ToggleButtonGroup, Typography } from '@mui/material'
+import { Chip, IconButton, InputBase, Link, List, ListItem, ListItemButton, ListItemText, Stack, ToggleButton, ToggleButtonGroup, Typography } from '@mui/material'
+import SearchIcon from '@mui/icons-material/Search'
+import CloseIcon from '@mui/icons-material/Close'
 import { Box } from '@mui/system'
 import { useState } from 'react'
 import { useSelector } from 'react-redux'
@@ -9,33 +11,55 @@ type FilterType = 'All' | 'Paper' | 'Audible' | 'Kindle' | 'Ebook' | 'Rereading'
 
 const BookList = () => {
   const allBookRecords = useSelector((state: RootState) => state.domain.bookRecords)
+  const [searchTitle, setSearchTitle] = useState('')
   const [filterType, setFilterType] = useState<FilterType>('All')
 
+  const searchedTitleRecords = allBookRecords.searchByTitle(searchTitle)
   let bookRecords: BookRecords
   switch (filterType) {
     case 'All':
-      bookRecords = allBookRecords
+      bookRecords = searchedTitleRecords
       break
     case 'Paper':
-      bookRecords = allBookRecords.filterByPaperFormat()
+      bookRecords = searchedTitleRecords.filterByPaperFormat()
       break
     case 'Audible':
-      bookRecords = allBookRecords.filterByAudibleFormat()
+      bookRecords = searchedTitleRecords.filterByAudibleFormat()
       break
     case 'Kindle':
-      bookRecords = allBookRecords.filterByKindleFormat()
+      bookRecords = searchedTitleRecords.filterByKindleFormat()
       break
     case 'Ebook':
-      bookRecords = allBookRecords.filterByEbookFormat()
+      bookRecords = searchedTitleRecords.filterByEbookFormat()
       break
     case 'Rereading':
-      bookRecords = allBookRecords.filterByRereading()
+      bookRecords = searchedTitleRecords.filterByRereading()
       break
   }
 
-
   return (
     <Box>
+      <Stack
+        component='form'
+        direction='row'
+        sx={{dispaly: 'flex', alignItems: 'center', border: 1, borderRadius: '4px', borderColor: '#0000001f'}}
+      >
+        <IconButton>
+          <SearchIcon />
+        </IconButton>
+        <InputBase
+          sx={{flex: 1}}
+          placeholder='Search...'
+          value={searchTitle}
+          onChange={(event) => setSearchTitle(event.target.value)}
+        />
+        <IconButton onClick={() => setSearchTitle('')}>
+          <CloseIcon />
+        </IconButton>
+      </Stack>
+
+      <Box sx={{height: 16}}></Box>
+
       <ToggleButtonGroup
         exclusive
         fullWidth
