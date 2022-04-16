@@ -5,8 +5,8 @@
     "build": "next build",
     "start": "next start",
     "test": "jest",
-    "lint": "eslint ./src/**/*.{ts,tsx}",
-    "lint:fix": "eslint --fix ./src/**/*.{ts,tsx}"
+    "lint": "next lint",
+    "lint:fix": "next lint --fix"
   },
   "dependencies": {
     "@emotion/react": "^11.8.2",
@@ -29,6 +29,7 @@
     "@typescript-eslint/eslint-plugin": "^5.15.0",
     "@typescript-eslint/parser": "^5.15.0",
     "eslint": "^8.11.0",
+    "eslint-config-next": "^12.1.5",
     "eslint-plugin-autofix": "^1.1.0",
     "jest": "^27.5.1",
     "ts-jest": "^27.1.3",
