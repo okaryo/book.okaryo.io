@@ -46,7 +46,7 @@ const StackedProgressChart = () => {
 
   return (
     <Box sx={{height: 250}}>
-      <Typography variant='h6' component='h6'>累積読書記録推移</Typography>
+      <Typography variant='h6' component='h6'>累積読書記録</Typography>
       <ResponsiveContainer width='100%' height='100%'>
         <AreaChart
           width={500}
