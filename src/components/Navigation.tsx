@@ -14,7 +14,7 @@ const Header = () => {
     const isActive = router.pathname === props.path
 
     return (
-      <Link href={props.path}>
+      <Link href={props.path} passHref>
         <Button sx={{borderRadius: 0, borderBottom: isActive ? 2 : 0 }}>
           {props.label}
         </Button>
