@@ -184,7 +184,7 @@ describe('#totalPageByMonth', () => {
   })
 })
 
-describe('#filterByPaperFormat', () => {
+describe('#paperFormatRecords', () => {
   test('should return only paper format records', () => {
     const actual = new BookRecords([
       new BookRecord(
@@ -215,7 +215,7 @@ describe('#filterByPaperFormat', () => {
         'Kindle',
         false
       ),
-    ]).filterByPaperFormat()
+    ]).paperFormatRecords
     const expected = new BookRecords([
       new BookRecord(
         new Date('2022-01-20'),
@@ -230,7 +230,7 @@ describe('#filterByPaperFormat', () => {
   })
 })
 
-describe('#filterByAudibleFormat', () => {
+describe('#audibleFormatRecords', () => {
   test('should return only audible format records', () => {
     const actual = new BookRecords([
       new BookRecord(
@@ -261,7 +261,7 @@ describe('#filterByAudibleFormat', () => {
         'Kindle',
         false
       ),
-    ]).filterByAudibleFormat()
+    ]).audibleFormatRecords
     const expected = new BookRecords([
       new BookRecord(
         new Date('2022-02-20'),
@@ -277,7 +277,7 @@ describe('#filterByAudibleFormat', () => {
 })
 
 
-describe('#filterByKindleFormat', () => {
+describe('#kindleFormatRecords', () => {
   test('should return only kindle format records', () => {
     const actual = new BookRecords([
       new BookRecord(
@@ -308,7 +308,7 @@ describe('#filterByKindleFormat', () => {
         'Kindle',
         false
       ),
-    ]).filterByKindleFormat()
+    ]).kindleFormatRecords
     const expected = new BookRecords([
       new BookRecord(
         new Date('2022-03-20'),
@@ -323,7 +323,7 @@ describe('#filterByKindleFormat', () => {
   })
 })
 
-describe('#filterByEbookFormat', () => {
+describe('#ebookFormatRecords', () => {
   test('should return only ebook format records', () => {
     const actual = new BookRecords([
       new BookRecord(
@@ -354,7 +354,7 @@ describe('#filterByEbookFormat', () => {
         'Kindle',
         false
       ),
-    ]).filterByEbookFormat()
+    ]).ebookFormatRecords
     const expected = new BookRecords([
       new BookRecord(
         new Date('2022-03-20'),
@@ -369,7 +369,7 @@ describe('#filterByEbookFormat', () => {
   })
 })
 
-describe('#filterByRereading', () => {
+describe('#rereadingRecords', () => {
   test('should return only rereading records', () => {
     const actual = new BookRecords([
       new BookRecord(
@@ -400,7 +400,7 @@ describe('#filterByRereading', () => {
         'Kindle',
         false
       ),
-    ]).filterByRereading()
+    ]).rereadingRecords
     const expected = new BookRecords([
       new BookRecord(
         new Date('2022-02-20'),

@@ -19,6 +19,31 @@ export class BookRecords {
     }, 0)
   }
 
+  get paperFormatRecords(): BookRecords {
+    const records = this.values.filter(record => record.format === 'Paper')
+    return new BookRecords(records)
+  }
+
+  get audibleFormatRecords(): BookRecords {
+    const records = this.values.filter(record => record.format === 'Audible')
+    return new BookRecords(records)
+  }
+
+  get kindleFormatRecords(): BookRecords {
+    const records = this.values.filter(record => record.format === 'Kindle')
+    return new BookRecords(records)
+  }
+
+  get ebookFormatRecords(): BookRecords {
+    const records = this.values.filter(record => record.format === 'Ebook')
+    return new BookRecords(records)
+  }
+
+  get rereadingRecords(): BookRecords {
+    const records = this.values.filter(record => record.isRereading)
+    return new BookRecords(records)
+  }
+
   totalCountByYear(date: Date): number {
     const year = date.getFullYear()
     return this.values.reduce((sum, record) => {
@@ -61,31 +86,6 @@ export class BookRecords {
       }
       return sum
     }, 0)
-  }
-
-  filterByPaperFormat(): BookRecords {
-    const records = this.values.filter(record => record.format === 'Paper')
-    return new BookRecords(records)
-  }
-
-  filterByAudibleFormat(): BookRecords {
-    const records = this.values.filter(record => record.format === 'Audible')
-    return new BookRecords(records)
-  }
-
-  filterByKindleFormat(): BookRecords {
-    const records = this.values.filter(record => record.format === 'Kindle')
-    return new BookRecords(records)
-  }
-
-  filterByEbookFormat(): BookRecords {
-    const records = this.values.filter(record => record.format === 'Ebook')
-    return new BookRecords(records)
-  }
-
-  filterByRereading(): BookRecords {
-    const records = this.values.filter(record => record.isRereading)
-    return new BookRecords(records)
   }
 
   searchByTitle(value: string): BookRecords {
