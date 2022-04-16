@@ -18,17 +18,23 @@ const StackedProgressChart = () => {
   const firstDate = sortedRecords.values[0].date
 
   const data: DataType[] = {} as DataType[]
-  const formatByDate = {}
+  const formatCountByDate = {}
+  const initialValue = {Paper: 0, Audible: 0, Kindle: 0, Ebook: 0, date: firstDate.toLocaleDateString()}
   sortedRecords.values.forEach((record) => {
-    formatByDate[record.date.toLocaleDateString()] = record.format
+    if (formatCountByDate[record.date.toLocaleDateString()] === undefined) {
+      formatCountByDate[record.date.toLocaleDateString()] = {...initialValue, date: record.date.toLocaleDateString()}
+    }
+    (formatCountByDate[record.date.toLocaleDateString()] as DataType)[record.format]++
   })
 
   let previousDateValue = {Paper: 0, Audible: 0, Kindle: 0, Ebook: 0, date: firstDate.toLocaleDateString()}
   for (let date = new Date(firstDate.getTime()); date <= new Date(); date.setDate(date.getDate() + 1)) {
     data[date.toLocaleDateString()] = {...previousDateValue, date: date.toLocaleDateString()}
 
-    if (formatByDate[date.toLocaleDateString()] !== undefined) {
-      (data[date.toLocaleDateString()] as DataType)[(formatByDate[date.toLocaleDateString()] as keyof DataType)]++
+    if (formatCountByDate[date.toLocaleDateString()] !== undefined) {
+      Object.entries(formatCountByDate[date.toLocaleDateString()] as DataType).forEach(([format, value]: [string, number]) => {
+        if (format !== 'date') (data[date.toLocaleDateString()] as DataType)[format] += value
+      })
     }
 
     previousDateValue = data[date.toLocaleDateString()] as DataType
