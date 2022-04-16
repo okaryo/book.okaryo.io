@@ -44,6 +44,30 @@ export class BookRecords {
     return new BookRecords(records)
   }
 
+  get validDateRecords(): BookRecords {
+    const records = this.values.filter(record => record.date !== null)
+    return new BookRecords(records)
+  }
+
+  get noDateRecords(): BookRecords {
+    const records = this.values.filter(record => record.date === null)
+    return new BookRecords(records)
+  }
+
+  get sortAscByDate(): BookRecords {
+    const records = this.validDateRecords.values.sort((a, b) => {
+      return a.date.getTime() - b.date.getTime()
+    })
+    return new BookRecords(records)
+  }
+
+  get sortDescByDate(): BookRecords {
+    const records = this.validDateRecords.values.sort((a, b) => {
+      return b.date.getTime() - a.date.getTime()
+    })
+    return new BookRecords(records)
+  }
+
   totalCountByYear(date: Date): number {
     const year = date.getFullYear()
     return this.values.reduce((sum, record) => {
