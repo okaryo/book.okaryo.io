@@ -1,7 +1,7 @@
-import { Box, Typography } from "@mui/material"
-import { useSelector } from "react-redux"
-import { Cell, Legend, Pie, PieChart, ResponsiveContainer } from "recharts"
-import { RootState } from "../../store"
+import { Box, Typography } from '@mui/material'
+import { useSelector } from 'react-redux'
+import { Cell, Legend, Pie, PieChart, ResponsiveContainer } from 'recharts'
+import { RootState } from '../../store'
 
 const FormatRateChart = () => {
   const allBookRecords = useSelector((state: RootState) => state.domain.bookRecords)

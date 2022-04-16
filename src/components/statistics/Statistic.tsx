@@ -1,5 +1,5 @@
-import { Box } from "@mui/material"
-import FormatRateChart from "./FormatRateChart"
+import { Box } from '@mui/material'
+import FormatRateChart from './FormatRateChart'
 
 const Statistic = () => {
   return (
