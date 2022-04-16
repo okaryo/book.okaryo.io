@@ -1,10 +1,9 @@
 import { Box, Typography } from '@mui/material'
-import { useSelector } from 'react-redux'
 import { Cell, Legend, Pie, PieChart, ResponsiveContainer } from 'recharts'
-import { RootState } from '../../store'
+import { store } from '../../store'
 
 const FormatRateChart = () => {
-  const allBookRecords = useSelector((state: RootState) => state.domain.bookRecords)
+  const allBookRecords = store
   const data = [
     {'name': '紙書籍', 'value': allBookRecords.paperFormatRecords.totalCount, 'color': '#0088FE'},
     {'name': 'Audible', 'value': allBookRecords.audibleFormatRecords.totalCount, 'color': '#00C49F'},

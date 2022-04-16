@@ -1,7 +1,6 @@
 import { Box, Typography } from '@mui/material'
-import { useSelector } from 'react-redux'
 import { Bar, BarChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts'
-import { RootState } from '../../store'
+import { store } from '../../store'
 
 type DataType = {
   date: string,
@@ -12,7 +11,7 @@ type DataType = {
 }
 
 const DailyProgressChart = () => {
-  const allBookRecords = useSelector((state: RootState) => state.domain.bookRecords)
+  const allBookRecords = store
   const sortedRecords = allBookRecords.sortAscByDate
   const firstDate = sortedRecords.values[0].date
 

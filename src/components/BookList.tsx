@@ -3,14 +3,13 @@ import SearchIcon from '@mui/icons-material/Search'
 import CloseIcon from '@mui/icons-material/Close'
 import { Box } from '@mui/system'
 import { useState } from 'react'
-import { useSelector } from 'react-redux'
 import { BookRecords } from '../model/BookRecords'
-import { RootState } from '../store'
+import { store } from '../store'
 
 type FilterType = 'All' | 'Paper' | 'Audible' | 'Kindle' | 'Ebook' | 'Rereading'
 
 const BookList = () => {
-  const allBookRecords = useSelector((state: RootState) => state.domain.bookRecords)
+  const allBookRecords = store
   const [searchTitle, setSearchTitle] = useState('')
   const [filterType, setFilterType] = useState<FilterType>('All')
 

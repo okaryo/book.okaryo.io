@@ -1,9 +1,8 @@
 import { Box, LinearProgress, LinearProgressProps, Stack, styled, Typography } from '@mui/material'
-import { useSelector } from 'react-redux'
-import { RootState } from '../../store'
+import { store } from '../../store'
 
 const RereadingRateChart = () => {
-  const allBookRecords = useSelector((state: RootState) => state.domain.bookRecords)
+  const allBookRecords = store
   const totalCountOfUniquedByTitle = new Set(allBookRecords.values.map((record) => record.book.title)).size
   const rereadingCountOfUniquedByTitle = new Set(allBookRecords.rereadingRecords.values.map((record) => record.book.title)).size
   const progress = (rereadingCountOfUniquedByTitle / totalCountOfUniquedByTitle) * 100

@@ -1,5 +1,3 @@
-import { Provider } from 'react-redux'
-import { useStore } from '../store'
 import Meta from '../components/Meta'
 import Navigation from '../components/Navigation'
 import { AppProps } from 'next/app'
@@ -7,10 +5,8 @@ import { Container, Divider } from '@mui/material'
 import Footer from '../components/Footer'
 
 const App = ({ Component, pageProps }: AppProps) => {
-  const store = useStore()
-
   return (
-    <Provider store={store}>
+    <div>
       <Meta />
 
       <Container sx={{pl: 2, pr: 2}}>
@@ -41,7 +37,7 @@ const App = ({ Component, pageProps }: AppProps) => {
           box-sizing: border-box;
         }
       `}</style>
-    </Provider>
+    </div>
   )
 }
 

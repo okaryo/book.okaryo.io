@@ -1,8 +1,7 @@
 import { Box, Typography } from '@mui/material'
-import { useSelector } from 'react-redux'
 import { Area, AreaChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts'
 import { NameType, Payload, ValueType } from 'recharts/types/component/DefaultTooltipContent'
-import { RootState } from '../../store'
+import { store } from '../../store'
 
 type DataType = {
   date: string,
@@ -13,7 +12,7 @@ type DataType = {
 }
 
 const StackedProgressChart = () => {
-  const allBookRecords = useSelector((state: RootState) => state.domain.bookRecords)
+  const allBookRecords = store
   const sortedRecords = allBookRecords.sortAscByDate
   const firstDate = sortedRecords.values[0].date
 

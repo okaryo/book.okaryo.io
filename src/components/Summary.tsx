@@ -1,9 +1,8 @@
 import { Paper, Stack, Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from '@mui/material'
-import { useSelector } from 'react-redux'
-import { RootState } from '../store'
+import { store } from '../store'
 
 const Summary = () => {
-  const bookRecords = useSelector((state: RootState) => state.domain.bookRecords)
+  const bookRecords = store
   const currentDate = new Date()
   const lastMonthDate = new Date(currentDate.getFullYear(), currentDate.getMonth() - 1, currentDate.getDate())
 
