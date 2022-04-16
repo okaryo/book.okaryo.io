@@ -13,10 +13,10 @@ const FormatRateChart = () => {
   ]
 
   return (
-    <Box sx={{height: '100%'}}>
+    <Box sx={{height: 250}}>
       <Typography variant='h6' component='h6'>読書形式割合</Typography>
       <ResponsiveContainer width='100%' height='100%'>
-        <PieChart width={300} height={300}>
+        <PieChart width={300} height={250}>
           <Pie
             data={data}
             cx='50%'

@@ -3,7 +3,7 @@ import Statistic from '../../components/statistics/Statistic'
 
 const StatisticPage = () => {
   return (
-    <Container sx={{minHeight: 500, display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+    <Container sx={{maxWidth: 600}}>
       <Statistic />
     </Container>
   )
