@@ -21,19 +21,19 @@ const BookList = () => {
       bookRecords = searchedTitleRecords
       break
     case 'Paper':
-      bookRecords = searchedTitleRecords.filterByPaperFormat()
+      bookRecords = allBookRecords.paperFormatRecords
       break
     case 'Audible':
-      bookRecords = searchedTitleRecords.filterByAudibleFormat()
+      bookRecords = allBookRecords.audibleFormatRecords
       break
     case 'Kindle':
-      bookRecords = searchedTitleRecords.filterByKindleFormat()
+      bookRecords = allBookRecords.kindleFormatRecords
       break
     case 'Ebook':
-      bookRecords = searchedTitleRecords.filterByEbookFormat()
+      bookRecords = allBookRecords.ebookFormatRecords
       break
     case 'Rereading':
-      bookRecords = searchedTitleRecords.filterByRereading()
+      bookRecords = allBookRecords.rereadingRecords
       break
   }
 
