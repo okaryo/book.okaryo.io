@@ -9,7 +9,7 @@ const FormatRateChart = () => {
     {'name': '紙書籍', 'value': allBookRecords.paperFormatRecords.totalCount, 'color': '#0088FE'},
     {'name': 'Audible', 'value': allBookRecords.audibleFormatRecords.totalCount, 'color': '#00C49F'},
     {'name': 'Kindle', 'value': allBookRecords.kindleFormatRecords.totalCount, 'color': '#FFBB28'},
-    {'name': 'Ebook', 'value': allBookRecords.ebookFormatRecords.totalCount, 'color': '#FF8042'},
+    {'name': '電子書籍', 'value': allBookRecords.ebookFormatRecords.totalCount, 'color': '#FF8042'},
   ]
 
   return (
