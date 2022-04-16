@@ -1,5 +1,5 @@
 import { Container } from '@mui/material'
-import Statistic from '../../components/Statistic'
+import Statistic from '../../components/statistics/Statistic'
 
 const StatisticPage = () => {
   return (
