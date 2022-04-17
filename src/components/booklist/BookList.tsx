@@ -1,10 +1,11 @@
-import { Chip, IconButton, InputBase, Link, List, ListItem, ListItemButton, ListItemText, Stack, ToggleButton, ToggleButtonGroup, Typography } from '@mui/material'
+import { IconButton, InputBase, List, Stack, ToggleButton, ToggleButtonGroup } from '@mui/material'
 import SearchIcon from '@mui/icons-material/Search'
 import CloseIcon from '@mui/icons-material/Close'
 import { Box } from '@mui/system'
 import { useState } from 'react'
-import { BookRecords } from '../model/BookRecords'
-import { store } from '../store'
+import { BookRecords } from '../../model/BookRecords'
+import { store } from '../../store'
+import BookListItem from './BookListItem'
 
 type FilterType = 'All' | 'Paper' | 'Audible' | 'Kindle' | 'Ebook' | 'Rereading'
 
@@ -78,54 +79,7 @@ const BookList = () => {
       <List>
         {
           bookRecords.values.map((record, index) => {
-            const dateText = record.formatDate
-            let formatLabel: string
-            switch (record.format) {
-              case 'Paper':
-                formatLabel = '紙書籍'
-                break
-              case 'Audible':
-                formatLabel = 'Audible'
-                break
-              case 'Kindle':
-                formatLabel = 'Kindle'
-                break
-              case 'Ebook':
-                formatLabel = '電子書籍'
-                break
-            }
-
-            return (
-              <ListItem key={index} style={{borderBottom: '1px solid #D2D2D2'}} disablePadding >
-                <ListItemButton style={{ width: '100%' }} sx={{pr: 0, pl: 0}}>
-                  <ListItemText
-                    primary={
-                      <Link
-                        href={record.book.url}
-                        target='_blank'
-                        rel='noopener noreferrer'
-                        underline='none'
-                      >
-                        <Typography
-                          variant='subtitle1'
-                          component='p'
-                          style={{ overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis' }}
-                        >
-                          {record.book.title}
-                        </Typography>
-                      </Link>
-                    }
-                    secondary={
-                      <Stack direction='row' spacing={1} alignItems='center'>
-                        <Typography variant='subtitle2' component='p'>{dateText}</Typography>
-                        <Chip label={formatLabel} size='small' color='primary' variant='outlined' />
-                      {record.isRereading && <Chip label='再読' size='small' color='success' variant='outlined' />}
-                      </Stack>
-                    }
-                  />
-                </ListItemButton>
-              </ListItem>
-            )
+            return <BookListItem key={index} record={record} />
           })
         }
       </List>

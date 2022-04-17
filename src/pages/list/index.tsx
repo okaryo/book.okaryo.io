@@ -1,4 +1,4 @@
-import BookList from '../../components/BookList'
+import BookList from '../../components/booklist/BookList'
 
 const ListPage = () => {
   return <BookList />
