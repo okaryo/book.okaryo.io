@@ -81,8 +81,8 @@ const BookListItem = (props: BookListItemProps) => {
             </Link>
             <Typography variant='subtitle2' component='p'>作者: {record.book.author.name}</Typography>
             <Typography variant='subtitle2' component='p'>ページ: {record.book.page}</Typography>
+            <Typography variant='subtitle2' component='p' mb={0.5}>読了日: {record.formatDate}</Typography>
             <Stack direction='row' spacing={1} alignItems='center' mb={2}>
-              <Typography variant='subtitle2' component='p'>読了日: {record.formatDate}</Typography>
               <Chip label={formatLabel} size='small' color='primary' variant='outlined' />
               {record.isRereading && <Chip label='再読' size='small' color='success' variant='outlined' />}
             </Stack>
