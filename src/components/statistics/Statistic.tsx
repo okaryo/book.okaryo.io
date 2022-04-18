@@ -6,7 +6,7 @@ import StackedProgressChart from './StackedProgressChart'
 
 const Statistic = () => {
   return (
-    <Box sx={{height: '100%', width: '100%', maxWidth: 600}}>
+    <Box sx={{height: '100%', width: '100%'}}>
       <FormatRateChart />
       <Box sx={{height: 32}} />
       <StackedProgressChart />
