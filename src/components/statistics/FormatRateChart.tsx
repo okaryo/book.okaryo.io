@@ -12,32 +12,34 @@ const FormatRateChart = () => {
   ]
 
   return (
-    <Box sx={{height: 250}}>
+    <Box>
       <Typography variant='h6' component='h6'>読書形式割合</Typography>
-      <ResponsiveContainer width='100%' height='100%'>
-        <PieChart width={300} height={250}>
-          <Pie
-            data={data}
-            cx='50%'
-            cy='50%'
-            startAngle={90}
-            endAngle={-270}
-            innerRadius={65}
-            outerRadius={100}
-            dataKey='value'
-          >
-            {data.map((entry, index) => (
-              <Cell key={`cell-${index}`} fill={entry.color} />
-            ))}
-          </Pie>
-          <Legend
-            verticalAlign='middle'
-            align='right'
-            layout='vertical'
-            iconType='square'
-          />
-        </PieChart>
-      </ResponsiveContainer>
+      <Box sx={{height: 250, display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+        <ResponsiveContainer width='50%' height='100%' minWidth={350}>
+          <PieChart width={300} height={250}>
+            <Pie
+              data={data}
+              cx='50%'
+              cy='50%'
+              startAngle={90}
+              endAngle={-270}
+              innerRadius={65}
+              outerRadius={100}
+              dataKey='value'
+            >
+              {data.map((entry, index) => (
+                <Cell key={`cell-${index}`} fill={entry.color} />
+              ))}
+            </Pie>
+            <Legend
+              verticalAlign='middle'
+              align='right'
+              layout='vertical'
+              iconType='square'
+            />
+          </PieChart>
+        </ResponsiveContainer>
+      </Box>
     </Box>
   )
 }
