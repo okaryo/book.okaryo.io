@@ -692,3 +692,87 @@ describe('#sortDescByDate', () => {
     expect(actual).toStrictEqual(expected)
   })
 })
+
+describe('#length', () => {
+  test('should return records length', () => {
+    const actual = new BookRecords([
+      new BookRecord(
+        new Date('2022-03-01'),
+        'review',
+        new Book(13, 'title1', 'url', new Author('name')),
+        'Paper',
+        false
+      ),
+      new BookRecord(
+        null,
+        'review',
+        new Book(13, 'title2', 'url', new Author('name')),
+        'Paper',
+        false
+      ),
+    ]).length
+    const expected = 2
+
+    expect(actual).toBe(expected)
+  })
+})
+
+describe('#slice', () => {
+  test('should return records between start and end', () => {
+    const actual = new BookRecords([
+      new BookRecord(
+        new Date('2022-03-01'),
+        'review',
+        new Book(13, 'title1', 'url', new Author('name')),
+        'Paper',
+        false
+      ),
+      new BookRecord(
+        null,
+        'review',
+        new Book(13, 'title2', 'url', new Author('name')),
+        'Paper',
+        false
+      ),
+      new BookRecord(
+        new Date('2022-02-01'),
+        'review',
+        new Book(13, 'title3', 'url', new Author('name')),
+        'Paper',
+        false
+      ),
+      new BookRecord(
+        null,
+        'review',
+        new Book(13, 'title4', 'url', new Author('name')),
+        'Paper',
+        false
+      ),
+      new BookRecord(
+        new Date('2022-01-01'),
+        'review',
+        new Book(13, 'title5', 'url', new Author('name')),
+        'Paper',
+        false
+      ),
+    ]).slice(2, 4)
+    const expected = new BookRecords([
+      new BookRecord(
+        new Date('2022-02-01'),
+        'review',
+        new Book(13, 'title3', 'url', new Author('name')),
+        'Paper',
+        false
+      ),
+      new BookRecord(
+        null,
+        'review',
+        new Book(13, 'title4', 'url', new Author('name')),
+        'Paper',
+        false
+      ),
+    ])
+
+    expect(actual).toStrictEqual(expected)
+  })
+})

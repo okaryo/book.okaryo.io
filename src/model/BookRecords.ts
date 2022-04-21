@@ -1,6 +1,7 @@
 import { BookRecord } from './BookRecord'
+import { Iterable } from './Iterable'
 
-export class BookRecords {
+export class BookRecords implements Iterable<BookRecord> {
   constructor(
     readonly values: BookRecord[]
   ) {}
@@ -66,6 +67,12 @@ export class BookRecords {
       return b.date.getTime() - a.date.getTime()
     })
     return new BookRecords(records)
+  }
+
+  get length(): number { return this.values.length }
+
+  slice(start: number, end: number): BookRecords {
+    return new BookRecords(this.values.slice(start, end))
   }
 
   totalCountByYear(date: Date): number {
