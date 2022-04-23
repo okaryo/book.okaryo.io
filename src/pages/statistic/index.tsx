@@ -1,5 +1,5 @@
 import { Box } from '@mui/material'
-import Statistic from '../../components/statistics/Statistic'
+import Statistic from '../../components/statistic/Statistic'
 
 const StatisticPage = () => {
   return (
