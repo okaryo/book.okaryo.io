@@ -1,5 +1,5 @@
 import Script from 'next/script'
-import Summary from '../components/Summary'
+import Summary from '../components/summary/Summary'
 
 const Home = () => {
   return (

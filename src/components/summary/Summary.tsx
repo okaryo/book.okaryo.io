@@ -1,5 +1,5 @@
 import { Paper, Stack, Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from '@mui/material'
-import { store } from '../store'
+import { store } from '../../store'
 
 const Summary = () => {
   const bookRecords = store
