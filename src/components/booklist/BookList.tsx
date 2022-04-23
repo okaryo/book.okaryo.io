@@ -3,38 +3,16 @@ import SearchIcon from '@mui/icons-material/Search'
 import CloseIcon from '@mui/icons-material/Close'
 import { Box } from '@mui/system'
 import { useState } from 'react'
-import { BookRecords } from '../../model/BookRecords'
 import { store } from '../../store'
 import BookListItem from './BookListItem'
-
-type FilterType = 'All' | 'Paper' | 'Audible' | 'Kindle' | 'Ebook' | 'Rereading'
+import PaginationItem from './PaginationItem'
+import { BookListState, FilterType } from '../../store/view/BookListState'
 
 const BookList = () => {
   const allBookRecords = store
-  const [searchTitle, setSearchTitle] = useState('')
-  const [filterType, setFilterType] = useState<FilterType>('All')
-
-  const searchedTitleRecords = allBookRecords.searchByTitle(searchTitle)
-  let bookRecords: BookRecords
-  switch (filterType) {
-    case 'All':
-      bookRecords = searchedTitleRecords
-      break
-    case 'Paper':
-      bookRecords = allBookRecords.paperFormatRecords
-      break
-    case 'Audible':
-      bookRecords = allBookRecords.audibleFormatRecords
-      break
-    case 'Kindle':
-      bookRecords = allBookRecords.kindleFormatRecords
-      break
-    case 'Ebook':
-      bookRecords = allBookRecords.ebookFormatRecords
-      break
-    case 'Rereading':
-      bookRecords = allBookRecords.rereadingRecords
-      break
+  const [state, setState] = useState(BookListState.init(allBookRecords))
+  const handlePagination = (_: React.ChangeEvent, page: number) => {
+    setState(state.updatePagination(page))
   }
 
   return (
@@ -50,10 +28,10 @@ const BookList = () => {
         <InputBase
           sx={{flex: 1}}
           placeholder='Search...'
-          value={searchTitle}
-          onChange={(event) => setSearchTitle(event.target.value)}
+          value={state.searchTitle}
+          onChange={(event) => setState(state.updateSearchTitle(event.target.value))}
         />
-        <IconButton onClick={() => setSearchTitle('')}>
+        <IconButton onClick={() => setState(state.updateSearchTitle(''))}>
           <CloseIcon />
         </IconButton>
       </Stack>
@@ -64,8 +42,8 @@ const BookList = () => {
         exclusive
         fullWidth
         color='primary'
-        value={filterType}
-        onChange={(_, value: FilterType) => setFilterType(value)}
+        value={state.filterType}
+        onChange={(_, value: FilterType) => setState(state.updateFilterType(value))}
         style={{ textTransform: 'none' }}
       >
         <ToggleButton value="All">すべて</ToggleButton>
@@ -78,11 +56,13 @@ const BookList = () => {
 
       <List>
         {
-          bookRecords.values.map((record, index) => {
+          state.pagination.currentPageValues.map((record, index) => {
             return <BookListItem key={index} record={record} />
           })
         }
       </List>
+
+      <PaginationItem page={state.pagination.current} count={state.pagination.length} onChange={handlePagination} />
     </Box>
   )
 }
