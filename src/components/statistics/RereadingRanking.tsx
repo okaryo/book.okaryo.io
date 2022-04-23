@@ -4,7 +4,7 @@ import { store } from '../../store'
 
 const RereadingRanking = () => {
   const allBookRecords = store
-  const ranking = RereadingRankingList.initialze(allBookRecords)
+  const ranking = RereadingRankingList.initialize(allBookRecords)
 
   return (
     <Box>
