@@ -23,18 +23,22 @@ export class BookListState {
   }
 
   updateSearchTitle(searchTitle: string): BookListState {
-    return new BookListState(this.source, this.calcPageBy({searchTitle: searchTitle}), searchTitle, this.filterType)
+    const filteredRecords = this.filteredRecords({searchTitle: searchTitle})
+    const newPagination = new Pagination(filteredRecords, this.pagination.perPage)
+    return new BookListState(this.source, newPagination, searchTitle, this.filterType)
   }
 
   updateFilterType(filterType: FilterType): BookListState  {
-    return new BookListState(this.source, this.calcPageBy({filterType: filterType}), this.searchTitle, filterType)
+    const filteredRecords = this.filteredRecords({filterType: filterType})
+    const newPagination = new Pagination(filteredRecords, this.pagination.perPage)
+    return new BookListState(this.source, newPagination, this.searchTitle, filterType)
   }
 
   updatePagination(page: number): BookListState {
     return new BookListState(this.source, this.pagination.toPage(page), this.searchTitle, this.filterType)
   }
 
-  private calcPageBy({searchTitle = '', filterType = 'All'}: OptionsType): Pagination<BookRecord> {
+  private filteredRecords({searchTitle = this.searchTitle, filterType = this.filterType}: OptionsType): BookRecords {
     const searchedTitleRecords = this.source.searchByTitle(searchTitle)
     const filteredBookRecords = (filterType: FilterType): BookRecords => {
       switch (filterType) {
@@ -52,6 +56,6 @@ export class BookListState {
           return searchedTitleRecords.rereadingRecords
       }
     }
-    return this.pagination.updateSource(filteredBookRecords(filterType))
+    return filteredBookRecords(filterType)
   }
 }
