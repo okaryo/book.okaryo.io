@@ -22,4 +22,8 @@ export class Pagination<T> {
   toPage(page: number): Pagination<T> {
     return new Pagination(this.values, this.perPage, page, page - 1, page + 1)
   }
+
+  updateSource(source: Pagable<T>) {
+    return new Pagination(source, this.perPage, this.current, this.prev, this.next)
+  }
 }

@@ -115,3 +115,71 @@ describe('#toPage', () => {
     expect(actual).toEqual(expected)
   })
 })
+
+describe('#updateSource', () => {
+  test('should return new pagination', () => {
+    const actual = new Pagination(
+      new BookRecords([
+        new BookRecord(
+          new Date(2022, 3, 20),
+          'review',
+          new Book(10, 'title', 'url', new Author('name')),
+          'Paper',
+          false
+        ),
+        new BookRecord(
+          new Date(2022, 3, 20),
+          'review',
+          new Book(10, 'title', 'url', new Author('name')),
+          'Paper',
+          false
+        ),
+      ]),
+      10,
+      1,
+      0,
+      2,
+    ).updateSource(
+      new BookRecords([
+        new BookRecord(
+          new Date(2022, 3, 21),
+          'review',
+          new Book(10, 'title', 'url', new Author('name')),
+          'Paper',
+          false
+        ),
+        new BookRecord(
+          new Date(2022, 3, 20),
+          'review',
+          new Book(10, 'title', 'url', new Author('name')),
+          'Paper',
+          false
+        ),
+      ])
+    )
+    const expected = new Pagination(
+      new BookRecords([
+        new BookRecord(
+          new Date(2022, 3, 21),
+          'review',
+          new Book(10, 'title', 'url', new Author('name')),
+          'Paper',
+          false
+        ),
+        new BookRecord(
+          new Date(2022, 3, 20),
+          'review',
+          new Book(10, 'title', 'url', new Author('name')),
+          'Paper',
+          false
+        ),
+      ]),
+      10,
+      1,
+      0,
+      2,
+    )
+
+    expect(actual).toEqual(expected)
+  })
+})
