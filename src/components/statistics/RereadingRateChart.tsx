@@ -15,7 +15,7 @@ const RereadingRateChart = () => {
   return (
     <Box>
       <Typography variant='h6' component='h6'>再読率</Typography>
-      <Typography variant='caption' component='p'>※今まで読んだ本のうち再読したことのある本の割合</Typography>
+      <Typography variant='caption' component='p'>※今まで読んだ本のタイトルのうち再読したものの割合</Typography>
       <Stack sx={{pt: 3, pb: 3}}>
         <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
           <Typography variant='body2'color='text.secondary' sx={{ display: 'flex' }}>{`${rereadingCountOfUniquedByTitle} / ${totalCountOfUniquedByTitle}`}</Typography>
