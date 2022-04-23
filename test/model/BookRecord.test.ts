@@ -1,6 +1,6 @@
-import { Author } from "../../src/model/Author"
-import { Book } from "../../src/model/Book"
-import { BookRecord } from "../../src/model/BookRecord"
+import { Author } from '../../src/model/Author'
+import { Book } from '../../src/model/Book'
+import { BookRecord } from '../../src/model/BookRecord'
 
 describe('#page', () => {
   test('should return book page', () => {

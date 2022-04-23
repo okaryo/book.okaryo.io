@@ -46,12 +46,12 @@ const BookList = () => {
         onChange={(_, value: FilterType) => setState(state.updateFilterType(value))}
         style={{ textTransform: 'none' }}
       >
-        <ToggleButton value="All">すべて</ToggleButton>
-        <ToggleButton value="Paper">紙書籍</ToggleButton>
-        <ToggleButton value="Audible" style={{ textTransform: 'none' }}>Audible</ToggleButton>
-        <ToggleButton value="Kindle" style={{ textTransform: 'none' }}>Kindle</ToggleButton>
-        <ToggleButton value="Ebook">電子書籍</ToggleButton>
-        <ToggleButton value="Rereading">再読</ToggleButton>
+        <ToggleButton value='All'>すべて</ToggleButton>
+        <ToggleButton value='Paper'>紙書籍</ToggleButton>
+        <ToggleButton value='Audible' style={{ textTransform: 'none' }}>Audible</ToggleButton>
+        <ToggleButton value='Kindle' style={{ textTransform: 'none' }}>Kindle</ToggleButton>
+        <ToggleButton value='Ebook'>電子書籍</ToggleButton>
+        <ToggleButton value='Rereading'>再読</ToggleButton>
       </ToggleButtonGroup>
 
       <List>

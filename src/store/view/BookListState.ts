@@ -1,6 +1,6 @@
-import { BookRecord } from "../../model/BookRecord"
-import { BookRecords } from "../../model/BookRecords"
-import { Pagination } from "../../model/Pagination"
+import { BookRecord } from '../../model/BookRecord'
+import { BookRecords } from '../../model/BookRecords'
+import { Pagination } from '../../model/Pagination'
 
 export type FilterType = 'All' | 'Paper' | 'Audible' | 'Kindle' | 'Ebook' | 'Rereading'
 

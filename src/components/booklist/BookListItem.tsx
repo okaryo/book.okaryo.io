@@ -66,8 +66,8 @@ const BookListItem = (props: BookListItemProps) => {
       <Modal
         open={openModal}
         onClose={onCloseModal}
-        aria-labelledby="modal-modal-title"
-        aria-describedby="modal-modal-description"
+        aria-labelledby='modal-modal-title'
+        aria-describedby='modal-modal-description'
       >
         <Card sx={modalStyle}>
           <CardContent>
@@ -77,7 +77,7 @@ const BookListItem = (props: BookListItemProps) => {
               rel='noopener noreferrer'
               underline='none'
             >
-              <Typography gutterBottom variant="h5" component="h5">{record.book.title}</Typography>
+              <Typography gutterBottom variant='h5' component='h5'>{record.book.title}</Typography>
             </Link>
             <Typography variant='subtitle2' component='p'>作者: {record.book.author.name}</Typography>
             <Typography variant='subtitle2' component='p'>ページ: {record.book.page}</Typography>
@@ -86,7 +86,7 @@ const BookListItem = (props: BookListItemProps) => {
               <Chip label={formatLabel} size='small' color='primary' variant='outlined' />
               {record.isRereading && <Chip label='再読' size='small' color='success' variant='outlined' />}
             </Stack>
-            <Typography variant="body2" color="text.secondary">{record.review === '' ? 'No Review' : record.review}</Typography>
+            <Typography variant='body2' color='text.secondary'>{record.review === '' ? 'No Review' : record.review}</Typography>
           </CardContent>
         </Card>
       </Modal>

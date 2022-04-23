@@ -1,8 +1,8 @@
-import { Author } from "../../src/model/Author"
-import { Book } from "../../src/model/Book"
-import { BookRecord } from "../../src/model/BookRecord"
-import { BookRecords } from "../../src/model/BookRecords"
-import { Pagination } from "../../src/model/Pagination"
+import { Author } from '../../src/model/Author'
+import { Book } from '../../src/model/Book'
+import { BookRecord } from '../../src/model/BookRecord'
+import { BookRecords } from '../../src/model/BookRecords'
+import { Pagination } from '../../src/model/Pagination'
 
 describe('#currentPageValues', () => {
   test('should return current values', () => {

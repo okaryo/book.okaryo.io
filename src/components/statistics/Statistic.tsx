@@ -1,6 +1,7 @@
 import { Box } from '@mui/material'
 import DailyProgressChart from './DailyProgressChart'
 import FormatRateChart from './FormatRateChart'
+import RereadingRanking from './RereadingRanking'
 import RereadingRateChart from './RereadingRateChart'
 import ReviewRateChart from './ReviewRateChart'
 import StackedProgressChart from './StackedProgressChart'
@@ -17,6 +18,8 @@ const Statistic = () => {
       <RereadingRateChart />
       <Box sx={{height: 32}} />
       <ReviewRateChart />
+      <Box sx={{height: 32}} />
+      <RereadingRanking />
     </Box>
   )
 }

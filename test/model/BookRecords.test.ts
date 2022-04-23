@@ -1,7 +1,7 @@
-import { Author } from "../../src/model/Author"
-import { Book } from "../../src/model/Book"
-import { BookRecord } from "../../src/model/BookRecord"
-import { BookRecords } from "../../src/model/BookRecords"
+import { Author } from '../../src/model/Author'
+import { Book } from '../../src/model/Book'
+import { BookRecord } from '../../src/model/BookRecord'
+import { BookRecords } from '../../src/model/BookRecords'
 
 describe('#init', () => {
   test('should return empty book records', () => {

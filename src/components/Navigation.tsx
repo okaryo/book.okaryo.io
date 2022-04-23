@@ -25,8 +25,8 @@ const Header = () => {
   return (
     <Box>
       <Typography
-        variant="h6"
-        component="h1"
+        variant='h6'
+        component='h1'
         style={{display: 'flex', alignItems: 'center'}}
         sx={{height: 54}}
       >
@@ -35,9 +35,9 @@ const Header = () => {
 
       <Box>
         <Stack direction='row'>
-          <TabButton path='/' label="HOME" />
-          <TabButton path='/list' label="LIST" />
-          <TabButton path='/statistic' label="STATISTIC" />
+          <TabButton path='/' label='HOME' />
+          <TabButton path='/list' label='LIST' />
+          <TabButton path='/statistic' label='STATISTIC' />
         </Stack>
       </Box>
     </Box>
