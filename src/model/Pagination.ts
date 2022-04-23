@@ -1,8 +1,8 @@
-import { Iterable } from './Iterable'
+import { Pagable } from './Pagable'
 
 export class Pagination<T> {
   constructor(
-    private values: Iterable<T>,
+    private values: Pagable<T>,
     readonly perPage: number = 20,
     readonly current: number = 1,
     readonly prev: number = 0,

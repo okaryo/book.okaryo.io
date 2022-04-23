@@ -1,7 +1,7 @@
 import { BookRecord } from './BookRecord'
-import { Iterable } from './Iterable'
+import { Pagable } from './Pagable'
 
-export class BookRecords implements Iterable<BookRecord> {
+export class BookRecords implements Pagable<BookRecord> {
   constructor(
     readonly values: BookRecord[]
   ) {}
