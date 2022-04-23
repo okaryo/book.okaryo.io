@@ -18,8 +18,8 @@ const RereadingRateChart = () => {
       <Typography variant='caption' component='p'>※今まで読んだ本のうち再読したことのある本の割合</Typography>
       <Stack sx={{pt: 3, pb: 3}}>
         <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
-          <Typography variant='body1' component='p' sx={{ display: 'flex' }}>{`${rereadingCountOfUniquedByTitle} / ${totalCountOfUniquedByTitle}`}</Typography>
-          <Typography variant="body2" color="text.secondary">{`${progress.toFixed(1)}%`}</Typography>
+          <Typography variant='body2'color='text.secondary' sx={{ display: 'flex' }}>{`${rereadingCountOfUniquedByTitle} / ${totalCountOfUniquedByTitle}`}</Typography>
+          <Typography variant="body2" color='text.secondary'>{`${progress.toFixed(1)}%`}</Typography>
         </Box>
         <Box sx={{ display: 'flex', alignItems: 'center'}}>
           <Box sx={{ width: '100%'}}>
