@@ -22,7 +22,7 @@ describe('#sortDesc', () => {
 
 describe('initialize', () => {
   test('should initialize by BookRecords', () => {
-    const actual = RereadingRankingList.initialze(
+    const actual = RereadingRankingList.initialize(
       new BookRecords([
         new BookRecord(
           new Date(2022, 3, 20),

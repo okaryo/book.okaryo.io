@@ -1,5 +1,5 @@
-import { BookRecords } from './BookRecords';
-import { RereadingRanking } from './RereadingRanking';
+import { BookRecords } from './BookRecords'
+import { RereadingRanking } from './RereadingRanking'
 
 export class RereadingRankingList {
   constructor(
@@ -12,7 +12,7 @@ export class RereadingRankingList {
     );
   }
 
-  static initialze(values: BookRecords): RereadingRankingList {
+  static initialize(values: BookRecords): RereadingRankingList {
     const rankingList = new RereadingRankingList([])
     values.values.forEach(bookRecord => {
       const ranking = rankingList.values.find(ranking => ranking.book.title === bookRecord.book.title)
@@ -21,7 +21,7 @@ export class RereadingRankingList {
       } else {
         rankingList.values.push(new RereadingRanking(bookRecord.book, 1));
       }
-    });
+    })
     return rankingList.sortDesc;
   }
 }
