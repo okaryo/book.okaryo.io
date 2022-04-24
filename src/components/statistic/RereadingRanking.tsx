@@ -28,6 +28,7 @@ const RereadingRanking = () => {
                   <ListItemButton style={{ width: '100%' }} sx={{pr: 0, pl: 0}}>
                     <Stack style={{ width: '100%' }} direction='row' alignItems='center' justifyContent='space-between'>
                       <ListItemText
+                        sx={{flex: 1, mr: 1}}
                         primary={
                           <Typography
                             variant='subtitle1'
@@ -41,7 +42,7 @@ const RereadingRanking = () => {
                           <Typography variant='body2' component='p' color='text.secondary'>著者: {ranking.book.author.name}</Typography>
                         }
                       />
-                      <Typography variant='body2' color='text.secondary'>{ranking.count}回読了</Typography>
+                      <Typography variant='body2' color='text.secondary'>{`${ranking.count}回読了`}</Typography>
                     </Stack>
                   </ListItemButton>
                 </Link>
