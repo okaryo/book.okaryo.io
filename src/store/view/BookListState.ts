@@ -23,6 +23,8 @@ export class BookListState {
   }
 
   updateSearchTitle(searchTitle: string): BookListState {
+    if (this.searchTitle === '' && searchTitle === '') return this
+
     const filteredRecords = this.filteredRecords({searchTitle: searchTitle})
     const newPagination = new Pagination(filteredRecords, this.pagination.perPage)
     return new BookListState(this.source, newPagination, searchTitle, this.filterType)
