@@ -2,6 +2,7 @@ import { Box } from '@mui/material'
 import AuthorRanking from './AuthorRanking'
 import DailyProgressChart from './DailyProgressChart'
 import FormatRateChart from './FormatRateChart'
+import PageRanking from './PageRanking'
 import RereadingRanking from './RereadingRanking'
 import RereadingRateChart from './RereadingRateChart'
 import ReviewRateChart from './ReviewRateChart'
@@ -23,6 +24,8 @@ const Statistic = () => {
       <RereadingRanking />
       <Box sx={{height: 32}} />
       <AuthorRanking />
+      <Box sx={{height: 32}} />
+      <PageRanking />
     </Box>
   )
 }
