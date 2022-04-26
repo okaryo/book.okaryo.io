@@ -693,6 +693,267 @@ describe('#sortDescByDate', () => {
   })
 })
 
+describe('#sortDescByPage', () => {
+  test('should return records sorted desc by page', () => {
+    const actual = new BookRecords([
+      new BookRecord(
+        new Date('2022-03-01'),
+        'review',
+        new Book(13, 'title1', 'url', new Author('name')),
+        'Paper',
+        false
+      ),
+      new BookRecord(
+        null,
+        'review',
+        new Book(10, 'title2', 'url', new Author('name')),
+        'Paper',
+        false
+      ),
+      new BookRecord(
+        new Date('2022-02-01'),
+        'review',
+        new Book(20, 'title3', 'url', new Author('name')),
+        'Paper',
+        false
+      ),
+      new BookRecord(
+        new Date('2022-02-01'),
+        'review',
+        new Book(25, 'title3', 'url', new Author('name')),
+        'Paper',
+        true,
+      ),
+    ]).sortDescByPage
+    const expected = new BookRecords([
+      new BookRecord(
+        new Date('2022-02-01'),
+        'review',
+        new Book(20, 'title3', 'url', new Author('name')),
+        'Paper',
+        false
+      ),
+      new BookRecord(
+        new Date('2022-03-01'),
+        'review',
+        new Book(13, 'title1', 'url', new Author('name')),
+        'Paper',
+        false
+      ),
+      new BookRecord(
+        null,
+        'review',
+        new Book(10, 'title2', 'url', new Author('name')),
+        'Paper',
+        false
+      ),
+    ])
+
+    expect(actual).toStrictEqual(expected)
+  })
+})
+
+
+describe('#sortDescByDate', () => {
+  test('should return records sorted desc by date', () => {
+    const actual = new BookRecords([
+      new BookRecord(
+        new Date('2022-03-01'),
+        'review',
+        new Book(13, 'title1', 'url', new Author('name')),
+        'Paper',
+        false
+      ),
+      new BookRecord(
+        null,
+        'review',
+        new Book(13, 'title2', 'url', new Author('name')),
+        'Paper',
+        false
+      ),
+      new BookRecord(
+        new Date('2022-02-01'),
+        'review',
+        new Book(13, 'title3', 'url', new Author('name')),
+        'Paper',
+        false
+      ),
+      new BookRecord(
+        null,
+        'review',
+        new Book(13, 'title4', 'url', new Author('name')),
+        'Paper',
+        false
+      ),
+      new BookRecord(
+        new Date('2022-01-01'),
+        'review',
+        new Book(13, 'title5', 'url', new Author('name')),
+        'Paper',
+        false
+      ),
+    ]).sortDescByDate
+    const expected = new BookRecords([
+      new BookRecord(
+        new Date('2022-03-01'),
+        'review',
+        new Book(13, 'title1', 'url', new Author('name')),
+        'Paper',
+        false
+      ),
+      new BookRecord(
+        new Date('2022-02-01'),
+        'review',
+        new Book(13, 'title3', 'url', new Author('name')),
+        'Paper',
+        false
+      ),
+      new BookRecord(
+        new Date('2022-01-01'),
+        'review',
+        new Book(13, 'title5', 'url', new Author('name')),
+        'Paper',
+        false
+      ),
+    ])
+
+    expect(actual).toStrictEqual(expected)
+  })
+})
+describe('#sortDescByDate', () => {
+  test('should return records sorted desc by date', () => {
+    const actual = new BookRecords([
+      new BookRecord(
+        new Date('2022-03-01'),
+        'review',
+        new Book(13, 'title1', 'url', new Author('name')),
+        'Paper',
+        false
+      ),
+      new BookRecord(
+        null,
+        'review',
+        new Book(13, 'title2', 'url', new Author('name')),
+        'Paper',
+        false
+      ),
+      new BookRecord(
+        new Date('2022-02-01'),
+        'review',
+        new Book(13, 'title3', 'url', new Author('name')),
+        'Paper',
+        false
+      ),
+      new BookRecord(
+        null,
+        'review',
+        new Book(13, 'title4', 'url', new Author('name')),
+        'Paper',
+        false
+      ),
+      new BookRecord(
+        new Date('2022-01-01'),
+        'review',
+        new Book(13, 'title5', 'url', new Author('name')),
+        'Paper',
+        false
+      ),
+    ]).sortDescByDate
+    const expected = new BookRecords([
+      new BookRecord(
+        new Date('2022-03-01'),
+        'review',
+        new Book(13, 'title1', 'url', new Author('name')),
+        'Paper',
+        false
+      ),
+      new BookRecord(
+        new Date('2022-02-01'),
+        'review',
+        new Book(13, 'title3', 'url', new Author('name')),
+        'Paper',
+        false
+      ),
+      new BookRecord(
+        new Date('2022-01-01'),
+        'review',
+        new Book(13, 'title5', 'url', new Author('name')),
+        'Paper',
+        false
+      ),
+    ])
+
+    expect(actual).toStrictEqual(expected)
+  })
+})
+
+describe('#sortDescByDate', () => {
+  test('should return records sorted desc by date', () => {
+    const actual = new BookRecords([
+      new BookRecord(
+        new Date('2022-03-01'),
+        'review',
+        new Book(13, 'title1', 'url', new Author('name')),
+        'Paper',
+        false
+      ),
+      new BookRecord(
+        null,
+        'review',
+        new Book(13, 'title2', 'url', new Author('name')),
+        'Paper',
+        false
+      ),
+      new BookRecord(
+        new Date('2022-02-01'),
+        'review',
+        new Book(13, 'title3', 'url', new Author('name')),
+        'Paper',
+        false
+      ),
+      new BookRecord(
+        null,
+        'review',
+        new Book(13, 'title4', 'url', new Author('name')),
+        'Paper',
+        false
+      ),
+      new BookRecord(
+        new Date('2022-01-01'),
+        'review',
+        new Book(13, 'title5', 'url', new Author('name')),
+        'Paper',
+        false
+      ),
+    ]).sortDescByDate
+    const expected = new BookRecords([
+      new BookRecord(
+        new Date('2022-03-01'),
+        'review',
+        new Book(13, 'title1', 'url', new Author('name')),
+        'Paper',
+        false
+      ),
+      new BookRecord(
+        new Date('2022-02-01'),
+        'review',
+        new Book(13, 'title3', 'url', new Author('name')),
+        'Paper',
+        false
+      ),
+      new BookRecord(
+        new Date('2022-01-01'),
+        'review',
+        new Book(13, 'title5', 'url', new Author('name')),
+        'Paper',
+        false
+      ),
+    ])
+
+    expect(actual).toStrictEqual(expected)
+  })
+})
+
 describe('#length', () => {
   test('should return records length', () => {
     const actual = new BookRecords([

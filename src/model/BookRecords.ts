@@ -69,6 +69,13 @@ export class BookRecords implements Pagable<BookRecord> {
     return new BookRecords(records)
   }
 
+  get sortDescByPage(): BookRecords {
+    const records = this.values.filter(record => !record.isRereading).sort((a, b) => {
+      return b.book.page - a.book.page
+    })
+    return new BookRecords(records)
+  }
+
   get length(): number { return this.values.length }
 
   slice(start: number, end: number): BookRecords {
