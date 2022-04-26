@@ -1,5 +1,4 @@
 import { Box, Link, List, ListItem, ListItemButton, ListItemText, Stack, Typography } from '@mui/material'
-import { RereadingRankingList } from '../../model/RereadingRankingList'
 import { store } from '../../store'
 
 const PageRanking = () => {
