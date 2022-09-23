@@ -1,4 +1,4 @@
-import { Card, CardContent, Chip, Link, ListItem, ListItemButton, ListItemText, Modal, Stack, Typography } from '@mui/material'
+import { Card, CardContent, Chip, Link, ListItem, ListItemButton, Modal, Stack, Typography } from '@mui/material'
 import { useState } from 'react'
 import { BookRecord } from '../../model/BookRecord'
 
@@ -43,25 +43,21 @@ const BookListItem = (props: BookListItemProps) => {
   return (
     <ListItem style={{borderBottom: '1px solid #D2D2D2'}} disablePadding >
       <ListItemButton style={{ width: '100%' }} sx={{pr: 0, pl: 0}} onClick={onClickItem}>
-        <ListItemText
-          primary={
-            <Typography
-              variant='subtitle1'
-              component='p'
-              color='primary'
-              style={{ overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis' }}
-            >
-              {record.book.title}
-            </Typography>
-          }
-          secondary={
-            <Stack direction='row' spacing={1} alignItems='center'>
-              <Typography variant='subtitle2' component='p'>{record.formatDate}</Typography>
-              <Chip label={formatLabel} size='small' color='primary' variant='outlined' />
-            {record.isRereading && <Chip label='再読' size='small' color='success' variant='outlined' />}
-            </Stack>
-          }
-        />
+        <Stack sx={{ pt: 0.75, pb: 0.75 }}>
+          <Typography
+            variant='subtitle1'
+            component='p'
+            color='primary'
+            style={{ overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis' }}
+          >
+            {record.book.title}
+          </Typography>
+          <Stack direction='row' spacing={1} alignItems='center' component='div'>
+            <Typography variant='subtitle2' component='p' sx={{ opacity: 0.6 }}>{record.formatDate}</Typography>
+            <Chip label={formatLabel} size='small' color='primary' variant='outlined' />
+          {record.isRereading && <Chip label='再読' size='small' color='success' variant='outlined' />}
+          </Stack>
+        </Stack>
       </ListItemButton>
       <Modal
         open={openModal}
