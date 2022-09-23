@@ -9,7 +9,7 @@ export class RereadingRankingList {
   get sortDesc(): RereadingRankingList {
     return new RereadingRankingList(
       this.values.sort((a, b) => b.count - a.count),
-    );
+    )
   }
 
   static initialize(values: BookRecords): RereadingRankingList {
@@ -19,9 +19,9 @@ export class RereadingRankingList {
       if (ranking !== undefined) {
         ranking.count += 1
       } else {
-        rankingList.values.push(new RereadingRanking(bookRecord.book, 1));
+        rankingList.values.push(new RereadingRanking(bookRecord.book, 1))
       }
     })
-    return rankingList.sortDesc;
+    return rankingList.sortDesc
   }
 }

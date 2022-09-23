@@ -9,7 +9,7 @@ export class AuthorRankingList {
   get sortDesc(): AuthorRankingList {
     return new AuthorRankingList(
       this.values.sort((a, b) => b.count - a.count),
-    );
+    )
   }
 
   static initialize(values: BookRecords): AuthorRankingList {
@@ -20,10 +20,10 @@ export class AuthorRankingList {
         if (ranking !== undefined) {
           ranking.count += 1
         } else {
-          rankingList.values.push(new AuthorRanking(bookRecord.book.author, 1));
+          rankingList.values.push(new AuthorRanking(bookRecord.book.author, 1))
         }
       }
     })
-    return rankingList.sortDesc;
+    return rankingList.sortDesc
   }
 }

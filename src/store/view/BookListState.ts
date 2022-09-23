@@ -30,7 +30,7 @@ export class BookListState {
     return new BookListState(this.source, newPagination, searchTitle, this.filterType)
   }
 
-  updateFilterType(filterType: FilterType): BookListState  {
+  updateFilterType(filterType: FilterType): BookListState {
     const filteredRecords = this.filteredRecords({filterType: filterType})
     const newPagination = new Pagination(filteredRecords, this.pagination.perPage)
     return new BookListState(this.source, newPagination, this.searchTitle, filterType)
