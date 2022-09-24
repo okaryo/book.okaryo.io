@@ -1,5 +1,5 @@
 import { BookRecords } from '../model/BookRecords'
-import BookRecordsJson from '../data/book-list.json'
+import BookRecordsJson from '../../../data/book-list.json'
 import { BookRecord } from '../model/BookRecord'
 import { Book } from '../model/Book'
 import { Author } from '../model/Author'
