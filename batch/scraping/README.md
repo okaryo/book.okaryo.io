@@ -1,5 +1,4 @@
 [![generate book record](https://github.com/okaryo/BookMeterRecordScraping/actions/workflows/scraping.yml/badge.svg)](https://github.com/okaryo/BookMeterRecordScraping/actions/workflows/scraping.yml)
-[![dispatch record updated](https://github.com/okaryo/BookMeterRecordScraping/actions/workflows/dispatch.yml/badge.svg)](https://github.com/okaryo/BookMeterRecordScraping/actions/workflows/dispatch.yml)
 
 # BookMeterRecordScraping
 
