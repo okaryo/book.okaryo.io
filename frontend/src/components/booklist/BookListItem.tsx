@@ -43,7 +43,7 @@ const BookListItem = (props: BookListItemProps) => {
   return (
     <ListItem style={{borderBottom: '1px solid #D2D2D2'}} disablePadding >
       <ListItemButton style={{ width: '100%' }} sx={{pr: 0, pl: 0}} onClick={onClickItem}>
-        <Stack sx={{ pt: 0.75, pb: 0.75 }}>
+        <Stack sx={{ pt: 0.75, pb: 0.75, width: '100%' }}>
           <Typography
             variant='subtitle1'
             component='p'
