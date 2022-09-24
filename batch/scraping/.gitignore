@@ -1,0 +1,10 @@
+/.gradle
+/.idea
+/bin
+/out
+/build
+*.iml
+*.ipr
+*.iws
+*.zip
+chromedriver
