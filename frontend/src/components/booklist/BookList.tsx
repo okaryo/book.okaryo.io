@@ -36,7 +36,7 @@ const BookList = () => {
         </IconButton>
       </Stack>
 
-      <Box sx={{height: 16}}></Box>
+      <Box sx={{height: 16}}/>
 
       <ToggleButtonGroup
         exclusive
