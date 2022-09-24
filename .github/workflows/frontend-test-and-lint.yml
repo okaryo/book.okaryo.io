@@ -1,9 +1,14 @@
-name: Test and Lint
+name: Test and Lint on frontend
 
 'on':
   push:
+  paths:
+    - 'frontend/**'
 
 jobs:
+  defaults:
+    run:
+      working-directory: frontend
   test:
     runs-on: ubuntu-latest
     steps:
