@@ -33,7 +33,7 @@ const DailyProgressChart = () => {
     }
   }
 
-  const tooltipValueFormat = (value: number, name: string) => {
+  const tooltipValueFormat = (value: number, name: string): [number, string] => {
     let label = name
     if (name === 'Paper') label = '紙書籍'
     if (name === 'Ebook') label = '電子書籍'
