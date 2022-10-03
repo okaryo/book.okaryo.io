@@ -49,3 +49,4 @@ jobs:
           git commit -m "[add] Generated File By Scheduled Task"
           git pull
           git push origin main
+        working-directory: ../
