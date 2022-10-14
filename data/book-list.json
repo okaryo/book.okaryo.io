@@ -1,6 +1,18 @@
 {
-    "recordsCount": 825,
+    "recordsCount": 826,
     "records": [
+        {
+            "date": "2022-10-12",
+            "review": "Audibleにて。最近個人開発でアプリを作ったので何か活かせるものはないかと思い読んでみた。3Cや4P、SWOTなど自分でも聞いたことはあるような基本的なマーケティング用語をざっと知ることができた。本書は本当に入門だと思うので、この本でより気になった分野を別途深めていき、実世界で実践していきたい。入門としては良い本だと思った。",
+            "book": {
+                "author": {"name": "山下 貴史"},
+                "page": 197,
+                "title": "世界一わかりやすいマーケティングの本 (East Press Business)",
+                "url": "https://www.amazon.co.jp/dp/product/4872576675/ref=as_li_tf_tl?camp=247&creative=1211&creativeASIN=4872576675&ie=UTF8&linkCode=as2&tag=bookmeter_book_image_image_pc_logoff-22"
+            },
+            "format": "Audible",
+            "isRereading": false
+        },
         {
             "date": "2022-10-09",
             "review": "Audibleにて。今すぐ転職を考えていないわけではないが、キャリアに悩む者の一人として読んでみた。自身のキャリアは常に考え続けなければいけないというのは最近身をもって感じている。その会社にいるにしても、そこでの仕事を通して自身のどんなスキルやキャリアを伸ばしていきたいのかをというのも考えながら仕事に臨むようにしたい。最近友人とのキャリア相談でもらった「なぜ今その会社にいるのかという問いに対して答えられなければいけない」という言葉が頭の中で反響している。",
@@ -9890,5 +9902,5 @@
             "isRereading": false
         }
     ],
-    "totalPages": 260347
+    "totalPages": 260544
 }
