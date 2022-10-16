@@ -1,6 +1,18 @@
 {
-    "recordsCount": 826,
+    "recordsCount": 827,
     "records": [
+        {
+            "date": "2022-10-16",
+            "review": "Audibleにて。ビジネスエリートになりたいわけではないが、落語というものに今まであまり触れてこなかったので読んでみた。落語の歴史や有名な噺、落語でよく出てくる登場人物、落語界の名人たち、他の伝統芸能との比較まで書かれていて面白かった。最近はYouTubeでも落語が見れるようで、さっそく立川談志の芝浜を見てみた。舞台の上に座布団一枚マイク一本だけなのにも驚いたが身ひとつだけでここまで惹き混んで魅せるのかとびっくりした。実際に落語の寄席にも行ってみたいと思った。",
+            "book": {
+                "author": {"name": "立川談慶"},
+                "page": 223,
+                "title": "ビジネスエリートがなぜか身につけている 教養としての落語",
+                "url": "https://www.amazon.co.jp/dp/product/4763138073/ref=as_li_tf_tl?camp=247&creative=1211&creativeASIN=4763138073&ie=UTF8&linkCode=as2&tag=bookmeter_book_image_image_pc_logoff-22"
+            },
+            "format": "Audible",
+            "isRereading": false
+        },
         {
             "date": "2022-10-12",
             "review": "Audibleにて。最近個人開発でアプリを作ったので何か活かせるものはないかと思い読んでみた。3Cや4P、SWOTなど自分でも聞いたことはあるような基本的なマーケティング用語をざっと知ることができた。本書は本当に入門だと思うので、この本でより気になった分野を別途深めていき、実世界で実践していきたい。入門としては良い本だと思った。",
@@ -9902,5 +9914,5 @@
             "isRereading": false
         }
     ],
-    "totalPages": 260544
+    "totalPages": 260767
 }
