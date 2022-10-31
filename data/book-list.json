@@ -1,6 +1,18 @@
 {
-    "recordsCount": 827,
+    "recordsCount": 828,
     "records": [
+        {
+            "date": "2022-10-28",
+            "review": "Kindleにて。毎週金曜日の出社日の通勤中の電車の中で少しずつ読んでようやく読み切れた。最初の方に通信の基礎の話もあった気がするが、ほとんどがキャッシュとCDNの話。それほどキャッシュやCDNの話は奥深く、CDNの設定や多段プロキシなど知らないことだらけだった。現状は複雑で大規模なCDNの構成が必要なことはないが、そういったものを自力で構成する必要がある際は再度この本に戻ってくることになると思われる。",
+            "book": {
+                "author": {"name": "田中 祥平"},
+                "page": 456,
+                "title": "Web配信の技術\u2015HTTPキャッシュ・リバースプロキシ・CDNを活用する",
+                "url": "https://www.amazon.co.jp/dp/product/4297119250/ref=as_li_tf_tl?camp=247&creative=1211&creativeASIN=4297119250&ie=UTF8&linkCode=as2&tag=bookmeter_book_image_image_pc_logoff-22"
+            },
+            "format": "Kindle",
+            "isRereading": false
+        },
         {
             "date": "2022-10-16",
             "review": "Audibleにて。ビジネスエリートになりたいわけではないが、落語というものに今まであまり触れてこなかったので読んでみた。落語の歴史や有名な噺、落語でよく出てくる登場人物、落語界の名人たち、他の伝統芸能との比較まで書かれていて面白かった。最近はYouTubeでも落語が見れるようで、さっそく立川談志の芝浜を見てみた。舞台の上に座布団一枚マイク一本だけなのにも驚いたが身ひとつだけでここまで惹き混んで魅せるのかとびっくりした。実際に落語の寄席にも行ってみたいと思った。",
@@ -9914,5 +9926,5 @@
             "isRereading": false
         }
     ],
-    "totalPages": 260767
+    "totalPages": 261223
 }
