@@ -1,6 +1,18 @@
 {
-    "recordsCount": 830,
+    "recordsCount": 831,
     "records": [
+        {
+            "date": "2022-11-14",
+            "review": "Audibleにて。ギリシア・ローマを中心としながらヨーロッパの歴史を概観することができる。リベラルアーツや教養といったものを押し出していたが、自分は歴史が好きだから面白いからという目的で読んだ。ソクラテス、プラトン、アリストテレスの哲学がその後に影響を与えながら歴史が展開していく様は空間的・時間的な深さとつながりを感じて本当に面白い。いつか時間をとって古典と言われるような哲学書を読み込んでみたいな。",
+            "book": {
+                "author": {"name": "中村 聡一"},
+                "page": 344,
+                "title": "教養としてのギリシャ・ローマ: 名門コロンビア大学で学んだリベラルアーツの真髄",
+                "url": "https://www.amazon.co.jp/dp/product/4492062173/ref=as_li_tf_tl?camp=247&creative=1211&creativeASIN=4492062173&ie=UTF8&linkCode=as2&tag=bookmeter_book_image_image_pc_logoff-22"
+            },
+            "format": "Audible",
+            "isRereading": false
+        },
         {
             "date": "2022-11-13",
             "review": "電子書籍にて。kawasimaさんのデータモデリングを読みたくて購入。scrapboxや勉強会で読んだり聞いたりしていたが、それらがまとまって書かれているので頭の中で整理しながら読むことができた。kawasimaさん以外の特集としては、業界が胡散臭いと思っていたWeb3周りの技術がかなりしっかりしていて、Railsでの簡単なアプリケーション実装例もあって知ることができてよかった。あとはPolicy as CodeとSLO/SLIなどいつか業務か何かでやってみたいなと思えるもののインプットができた。",
@@ -9950,5 +9962,5 @@
             "isRereading": false
         }
     ],
-    "totalPages": 261687
+    "totalPages": 262031
 }
