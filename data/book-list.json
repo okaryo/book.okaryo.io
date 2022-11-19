@@ -1,6 +1,18 @@
 {
-    "recordsCount": 831,
+    "recordsCount": 832,
     "records": [
+        {
+            "date": "2022-11-19",
+            "review": "Audibleにて。13のトピックを切り口としていろんな角度から歴史の大局を見渡す。文明の発展と衰退、宗教や社会主義の話など個人的に面白いトピックはいくつかあったが、内容としては割と歴史の知識やコンテキストを読者が持っている前提で進んでいるので人によっては難しいのではないかと思った。",
+            "book": {
+                "author": {"name": "ウィル・デュラント,アリエル・デュラント,Will Durant,Ariel Durant"},
+                "page": 175,
+                "title": "歴史の大局を見渡す ──人類の遺産の創造とその記録 (フェニックスシリーズ)",
+                "url": "https://www.amazon.co.jp/dp/product/4775941658/ref=as_li_tf_tl?camp=247&creative=1211&creativeASIN=4775941658&ie=UTF8&linkCode=as2&tag=bookmeter_book_image_image_pc_logoff-22"
+            },
+            "format": "Audible",
+            "isRereading": false
+        },
         {
             "date": "2022-11-14",
             "review": "Audibleにて。ギリシア・ローマを中心としながらヨーロッパの歴史を概観することができる。リベラルアーツや教養といったものを押し出していたが、自分は歴史が好きだから面白いからという目的で読んだ。ソクラテス、プラトン、アリストテレスの哲学がその後に影響を与えながら歴史が展開していく様は空間的・時間的な深さとつながりを感じて本当に面白い。いつか時間をとって古典と言われるような哲学書を読み込んでみたいな。",
@@ -9962,5 +9974,5 @@
             "isRereading": false
         }
     ],
-    "totalPages": 262031
+    "totalPages": 262206
 }
