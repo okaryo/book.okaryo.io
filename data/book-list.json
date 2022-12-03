@@ -1,6 +1,30 @@
 {
-    "recordsCount": 834,
+    "recordsCount": 836,
     "records": [
+        {
+            "date": "2022-12-03",
+            "review": "セキュリティやインフラ関連の知識をつけたいと思い読んだ。セキュリティ関連の各サービスの概要と基本的な視点が説明されていてよかった。このあとはBlackBeltや公式のドキュメントを読んだり、AWS上で自分で手を動かして構築してみたりとやっていきたい。手応えあれば試験も近いうちに受けたい。",
+            "book": {
+                "author": {"name": "NRIネットコム株式会社,佐々木 拓郎,上野 史瑛,小林 恭平"},
+                "page": 320,
+                "title": "要点整理から攻略する『AWS認定 セキュリティ-専門知識』",
+                "url": "https://www.amazon.co.jp/dp/product/4839970947/ref=as_li_tf_tl?camp=247&creative=1211&creativeASIN=4839970947&ie=UTF8&linkCode=as2&tag=bookmeter_book_image_image_pc_logoff-22"
+            },
+            "format": "Paper",
+            "isRereading": false
+        },
+        {
+            "date": "2022-12-02",
+            "review": "Audibleにて。最近個人でアプリを開発していて役立ちそうな知見はないかと思って読んだ。が、プロダクト関連の内容ではなく、営業における顧客志向によるファンづくりの本だった。それでも読み進めていると、自分のイベントをファンだけで運営してもらった話があり、宗教じみたインフルエンサーのようで若干引いたが、一人一人としっかり向き合うことでこんなファンを作れるのか、とも思った。数字を追うのも大切だが、ユーザー一人一人に向き合う大切さを思い出させてくれた点を収穫とする。",
+            "book": {
+                "author": {"name": "和田 裕美"},
+                "page": 216,
+                "title": "ファンに愛され、売れ続ける秘訣",
+                "url": "https://www.amazon.co.jp/dp/product/4761276223/ref=as_li_tf_tl?camp=247&creative=1211&creativeASIN=4761276223&ie=UTF8&linkCode=as2&tag=bookmeter_book_image_image_pc_logoff-22"
+            },
+            "format": "Audible",
+            "isRereading": false
+        },
         {
             "date": "2022-11-27",
             "review": "この本について扱っていたForkwellのイベント動画で「読む量は学力の上限を規定し、書く量は学力の下限を規定する」という言葉を紹介していてすごく良い言葉だと思い気になって本も読んでみた。内容は普段本を読まなかったりアウトプットもしていない層に向けて書かれている印象で、流し読みをした箇所がいくつかあったが、時間制限読書法や一点突破読書法は個人的に興味を惹かれたので今後取り入れて実践していきたい。特に技術書に限らず読書術一般についても書かれているのでエンジニア以外の方にもおすすめしたい。",
@@ -9998,5 +10022,5 @@
             "isRereading": false
         }
     ],
-    "totalPages": 262723
+    "totalPages": 263259
 }
