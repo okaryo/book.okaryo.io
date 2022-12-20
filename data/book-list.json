@@ -1,6 +1,18 @@
 {
-    "recordsCount": 842,
+    "recordsCount": 843,
     "records": [
+        {
+            "date": "2022-12-19",
+            "review": "Audibleにて。何かしらのところから聞いたことのあるような内容ばかりが薄く並べられているような感じがしていたが、アジャイル開発に対する理解の程度でそれの確信度が一気に高まってしまった。一方で、社会はどう変わっていて自分はどう変わっていかなければいけないのかをたくさんの視点から知る上では良いように感じる。",
+            "book": {
+                "author": {"name": "佐藤 留美"},
+                "page": 198,
+                "title": "仕事2.0 人生100年時代の変身力 (NewsPicks Book)",
+                "url": "https://www.amazon.co.jp/dp/product/4344033337/ref=as_li_tf_tl?camp=247&creative=1211&creativeASIN=4344033337&ie=UTF8&linkCode=as2&tag=bookmeter_book_image_image_pc_logoff-22"
+            },
+            "format": "Audible",
+            "isRereading": false
+        },
         {
             "date": "2022-12-18",
             "review": "2023年はRDBに強くなろうと決意したので、まだ2022年ではあるがスタートダッシュで読んだ。『SQLアンチパターン』をかなり前に読んだことがあるが、当時よりもDBの経験がついたおかげなのか内容がかなり分かりやすかった。20個の落とし穴について、その概要とどうすればそのアンチパターンを踏まないようにできるのかという解決策を解説してくれるので構成が分かりやすく、実践もしやすいと思われる。参考文献やおすすめの書籍も紹介されていたのでそれらにも目を通しておきたい。",
@@ -10094,5 +10106,5 @@
             "isRereading": false
         }
     ],
-    "totalPages": 264724
+    "totalPages": 264922
 }
