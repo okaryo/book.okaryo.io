@@ -1,6 +1,18 @@
 {
-    "recordsCount": 843,
+    "recordsCount": 844,
     "records": [
+        {
+            "date": "2022-12-23",
+            "review": "Audibleにて。地頭力を、知的好奇心・論理思考力・直感力をベースとして仮説思考力・フレームワーク思考力・抽象化思考力で構成されるものとして定義しており、それを生まれつきのものとしていないのが個人的には良かった。地頭力を鍛えるものとしてフェルミ推定を紹介しており、それに取り組む際の考え方はとても役に立ちそうだった。結論から、全体から、単純に、という考え方は今後いろんな場面で意識して使っていきたい。",
+            "book": {
+                "author": {"name": "細谷 功"},
+                "page": 230,
+                "title": "地頭力を鍛える 問題解決に活かす「フェルミ推定」",
+                "url": "https://www.amazon.co.jp/dp/product/4492555986/ref=as_li_tf_tl?camp=247&creative=1211&creativeASIN=4492555986&ie=UTF8&linkCode=as2&tag=bookmeter_book_image_image_pc_logoff-22"
+            },
+            "format": "Audible",
+            "isRereading": false
+        },
         {
             "date": "2022-12-19",
             "review": "Audibleにて。何かしらのところから聞いたことのあるような内容ばかりが薄く並べられているような感じがしていたが、アジャイル開発に対する理解の程度でそれの確信度が一気に高まってしまった。一方で、社会はどう変わっていて自分はどう変わっていかなければいけないのかをたくさんの視点から知る上では良いように感じる。",
@@ -10106,5 +10118,5 @@
             "isRereading": false
         }
     ],
-    "totalPages": 264922
+    "totalPages": 265152
 }
