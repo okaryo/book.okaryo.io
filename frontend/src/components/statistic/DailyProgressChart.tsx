@@ -33,11 +33,11 @@ const DailyProgressChart = () => {
     }
   }
 
-  const tooltipValueFormat = (value: number, name: string) => {
+  const tooltipValueFormat = (value: number, name: string, _: any) => {
     let label = name
     if (name === 'Paper') label = '紙書籍'
     if (name === 'Ebook') label = '電子書籍'
-    return [value, label]
+    return [value, label, _]
   }
 
   return (
