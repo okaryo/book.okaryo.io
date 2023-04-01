@@ -75,18 +75,6 @@
         },
         {
             "date": "2023-01-26",
-            "review": "Audibleにて。ゆるい起業について書かれているが、構成も文章もゆるゆるでチープなブログを読んでいるかのようだった。調べてみると個人出版でのKindle限定本とのこと。事業の立ち上げや資金繰りのような具体的な話もなく、内容も薄いのであまりおすすめはできない。",
-            "book": {
-                "author": {"name": "川喜田　敬"},
-                "page": 192,
-                "title": "ゆるい起業で生きていく: 自分らしく生きるひとり起業家に贈る17のしないことリスト ゆるい起業式シリーズ(Kindle版)",
-                "url": "https://www.amazon.co.jp/dp/product/B09667HKM8/ref=as_li_tf_tl?camp=247&creative=1211&creativeASIN=B09667HKM8&ie=UTF8&linkCode=as2&tag=bookmeter_book_image_image_pc_logoff-22"
-            },
-            "format": "Audible",
-            "isRereading": false
-        },
-        {
-            "date": "2023-01-26",
             "review": "もっと良いテストを書きたいと思って読んだ。点、線、面、立体、時間、多次元と各次元の視点からテストの技法と考え方が解説されている。特に状態遷移やシナリオテストの箇所は参考になった。本書で紹介されていたテスト技法の考え方は参考になるものの、自分の想像でしかないがそれらが本格的に利用されるのは、設計者・開発者・テスト担当に分かれているプロジェクトだったり、一度納品したらそれで終わりのようなかなり大規模なシステムだったりするんじゃないかと感じた。",
             "book": {
                 "author": {"name": "秋山 浩一"},
@@ -103,7 +91,7 @@
             "book": {
                 "author": {"name": "川喜田　敬"},
                 "page": 192,
-                "title": "ゆるい起業で生きていく: 自分らしく生きるひとり起業家に贈る17のしないことリスト ゆるい起業式シリーズ(Kindle)",
+                "title": "ゆるい起業で生きていく: 自分らしく生きるひとり起業家に贈る17のしないことリスト ゆるい起業式シリーズ(Kindle版)",
                 "url": "https://www.amazon.co.jp/dp/product/B09667HKM8/ref=as_li_tf_tl?camp=247&creative=1211&creativeASIN=B09667HKM8&ie=UTF8&linkCode=as2&tag=bookmeter_book_image_image_pc_logoff-22"
             },
             "format": "Audible",
