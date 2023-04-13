@@ -31,8 +31,8 @@ jobs:
         run: ./gradlew run --args="739784 book-list.json only-diff"
       - name: setup git
         run: |
-          git config --local user.email "okaryotr@gmail.com"
-          git config --local user.name "okaryo"
+          git config --local user.email "130679205+okaryo-bot[bot]@users.noreply.github.com"
+          git config --local user.name "OKARYO BOT[bot]"
           git config --local pull.rebase false
       - name: detect any diff
         run: |
