@@ -8,7 +8,7 @@ class WebDriver {
     private val driver: ChromeDriver
 
     init {
-        System.setProperty("webdriver.chrome.driver", "./chromedriver")
+        System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver")
         options = ChromeOptions().apply { addArguments("--headless") }
         driver = ChromeDriver(options)
     }
