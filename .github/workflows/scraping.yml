@@ -44,7 +44,7 @@ jobs:
         if: env.existsDiff == 'true'
         run: |
           git add .
-          git commit -m ":sparkles: add reading records by scheduled scraping task"
+          git commit -m "update: reading records by scheduled task"
           git pull
           git push origin main
         working-directory: ./
