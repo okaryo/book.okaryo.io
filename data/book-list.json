@@ -1,6 +1,18 @@
 {
-    "recordsCount": 886,
+    "recordsCount": 887,
     "records": [
+        {
+            "date": "2023-10-30",
+            "review": "ネタバレ",
+            "book": {
+                "author": {"name": "ジェイムズ・P・ホーガン"},
+                "page": 440,
+                "title": "未踏の蒼穹 (創元SF文庫 ホ 1-28)",
+                "url": "https://www.amazon.co.jp/dp/product/4488663281/ref=as_li_tf_tl?camp=247&creative=1211&creativeASIN=4488663281&ie=UTF8&linkCode=as2&tag=bookmeter_book_image_image_pc_logoff-22"
+            },
+            "format": "Paper",
+            "isRereading": false
+        },
         {
             "date": "2023-10-15",
             "review": "最近民俗学に興味があり本屋に寄った際に見つけた。国立民族学博物館が監修しており、過去にあった企画展の図録らしい。人々の驚異から発せられた想像力の産物たちを水・天・地にまつわるものごとに豊富な写真とともに紹介している。特に自分は人の顔をかたどったもの、仮面や像にとても心が惹かれる。科学技術の進展による世界の解明や都市化によって当時の人々が驚異し想像力を掻き立てられた闇は少なくなった。現代と比べるとなんて想像力の豊かな時代だったろうと羨ましくなる一方で、現代においてもその余地は別の形であるような気もした。",
@@ -10634,5 +10646,5 @@
             "isRereading": false
         }
     ],
-    "totalPages": 276421
+    "totalPages": 276861
 }
