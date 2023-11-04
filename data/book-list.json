@@ -1,6 +1,18 @@
 {
-    "recordsCount": 887,
+    "recordsCount": 888,
     "records": [
+        {
+            "date": "2023-11-03",
+            "review": "Audibleにて。バンコクからマレー半島を南下しながらシンガポールへ。自分の海外渡航経験は北欧しかなく、東南アジアには土地勘がないのでGoogleマップと本書内の場所を見比べながら読んでいた。今では都市もインフラも発展している様子で、当時の旅行は大変だったことが本書の文を通しても伝わってくるがそれが旅の醍醐味だったのだろう。巻の後半にあった、決めることで何かに固定されることへの怖さと執行猶予について、自分の場合は大学3年の休学がそれだったので強い共感があった。",
+            "book": {
+                "author": {"name": "沢木 耕太郎"},
+                "page": 256,
+                "title": "深夜特急2 ー マレー半島・シンガポール〈文字拡大増補新版〉 (新潮文庫)",
+                "url": "https://www.amazon.co.jp/dp/product/4101235295/ref=as_li_tf_tl?camp=247&creative=1211&creativeASIN=4101235295&ie=UTF8&linkCode=as2&tag=bookmeter_book_image_image_pc_logoff-22"
+            },
+            "format": "Audible",
+            "isRereading": false
+        },
         {
             "date": "2023-10-30",
             "review": "ネタバレ",
@@ -10646,5 +10658,5 @@
             "isRereading": false
         }
     ],
-    "totalPages": 276861
+    "totalPages": 277117
 }
