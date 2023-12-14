@@ -1,5 +1,5 @@
 {
-    "recordsCount": 899,
+    "recordsCount": 900,
     "records": [
         {
             "date": "2023-12-10",
@@ -345,6 +345,18 @@
                 "page": 323,
                 "title": "街道をゆく 3 陸奥のみち、肥薩のみちほか (朝日文庫)",
                 "url": "https://www.amazon.co.jp/dp/product/4022644427/ref=as_li_tf_tl?camp=247&creative=1211&creativeASIN=4022644427&ie=UTF8&linkCode=as2&tag=bookmeter_book_image_image_pc_logoff-22"
+            },
+            "format": "Paper",
+            "isRereading": false
+        },
+        {
+            "date": "2023-06-24",
+            "review": "最新作の映画であるランドセルガールを観てきて、前回分の記録をつけていなかったことを思い出して書いている。その際に読み直してみたけど、ランドセルガールの来場者特典と繋がっている構成が良い。短編だけど花楓の未来への決意が含まれていて胸が熱くなる。",
+            "book": {
+                "author": {"name": "鴨志田 一"},
+                "page": 40,
+                "title": "青春ブタ野郎はアニマルランドの夢を見る",
+                "url": "https://ao-buta.com/"
             },
             "format": "Paper",
             "isRereading": false
@@ -10790,5 +10802,5 @@
             "isRereading": false
         }
     ],
-    "totalPages": 278732
+    "totalPages": 278772
 }
