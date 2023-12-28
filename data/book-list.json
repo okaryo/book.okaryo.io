@@ -1,6 +1,30 @@
 {
-    "recordsCount": 906,
+    "recordsCount": 908,
     "records": [
+        {
+            "date": "2023-12-28",
+            "review": "前巻のマイステューデントを読んで続きが気になったので一気に読んだ。今回は霧島透子、改め岩見沢寧々の思春期症候群の回。何者かになりたい、何者かでなくてはならない、という悩み自体は自分自身も通ったことがあるので共感しながら読めた。後半はミステリーサスペンスのような緊迫感のある読み味で、ページが止まらず深夜過ぎに最後まで読み切ってしまった。いよいよ最終章突入らしく、次巻も楽しみ。",
+            "book": {
+                "author": {"name": "鴨志田 一"},
+                "page": 326,
+                "title": "青春ブタ野郎はサンタクロースの夢を見ない (電撃文庫)",
+                "url": "https://www.amazon.co.jp/dp/product/4049148676/ref=as_li_tf_tl?camp=247&creative=1211&creativeASIN=4049148676&ie=UTF8&linkCode=as2&tag=bookmeter_book_image_image_pc_logoff-22"
+            },
+            "format": "Paper",
+            "isRereading": false
+        },
+        {
+            "date": "2023-12-27",
+            "review": "今回はバイト先の塾の生徒である姫路紗良の思春期症候群がメインの回。自分が大学生の頃や若いことに読んでいた恋愛ストーリーは共感するところが多かったが、少し歳を重ねて読むと少しだけ距離があるように感じてセルフダメージを受けた。とはいえ作品自体は面白く、霧島透子についての手がかりは得たようだがまだ謎のままであり、次巻も気になる。",
+            "book": {
+                "author": {"name": "鴨志田 一"},
+                "page": 344,
+                "title": "青春ブタ野郎はマイスチューデントの夢を見ない (電撃文庫)",
+                "url": "https://www.amazon.co.jp/dp/product/4049139367/ref=as_li_tf_tl?camp=247&creative=1211&creativeASIN=4049139367&ie=UTF8&linkCode=as2&tag=bookmeter_book_image_image_pc_logoff-22"
+            },
+            "format": "Paper",
+            "isRereading": false
+        },
         {
             "date": "2023-12-24",
             "review": "11月の大阪旅行で訪れた国立民族学博物館で購入。午前から閉館まで1日滞在していたが、最後まで展示を見切ることができなかったので図録で確認できるのは良いし、すでに見た展示も振り返ることができたのでとても良かった。また、図録の最後には研究員さんによるテーマごとの解説もあって面白い。またいつか博物館の方にも行きたい。",
@@ -10874,5 +10898,5 @@
             "isRereading": false
         }
     ],
-    "totalPages": 280000
+    "totalPages": 280670
 }
