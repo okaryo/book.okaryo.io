@@ -1,6 +1,30 @@
 {
-    "recordsCount": 908,
+    "recordsCount": 910,
     "records": [
+        {
+            "date": "2023-12-29",
+            "review": "夏の東北旅行で秋田もと考えて購入していたが、結局時間の都合で予定から外したので詰んでいた。来年の2月にリベンジで秋田に行こうと思い読み始めた。菅原真澄、狩野亨吉、安藤昌益、内藤湖南など魅力的な人物を多数・同時代的に生み出した秋田という土地。飛騨においては、山国で高冷なために土地の生産性が低いからこそ良い酒のように文化が沈澱し熟成し今ではかえって新鮮なのではないか、という記述はとても美しかった。",
+            "book": {
+                "author": {"name": "司馬 遼太郎"},
+                "page": 352,
+                "title": "街道をゆく 29 秋田県散歩、飛騨紀行 (朝日文庫)",
+                "url": "https://www.amazon.co.jp/dp/product/4022644834/ref=as_li_tf_tl?camp=247&creative=1211&creativeASIN=4022644834&ie=UTF8&linkCode=as2&tag=bookmeter_book_image_image_pc_logoff-22"
+            },
+            "format": "Paper",
+            "isRereading": false
+        },
+        {
+            "date": "2023-12-29",
+            "review": "もうすぐ自分も28で、キャリアの方向性について考えている。選択肢の一つに起業もあり読んでみることにした。29で起業をして10年以上かけて会社を大きくしていった著者による起業の現実を体験談とともに紹介する本。ためになる話もたくさんあったが、当たり前だよなと思う話もたくさんあり、当たり前を当たり前にできることや当たり前を知っていることはかなり重要なんだと思った。起業をする前に自分で小さなビジネスでも始めてみようかな。",
+            "book": {
+                "author": {"name": "井上 達也"},
+                "page": 241,
+                "title": "起業を考えたら必ず読む本 (Asuka business & language book)",
+                "url": "https://www.amazon.co.jp/dp/product/4756918557/ref=as_li_tf_tl?camp=247&creative=1211&creativeASIN=4756918557&ie=UTF8&linkCode=as2&tag=bookmeter_book_image_image_pc_logoff-22"
+            },
+            "format": "Paper",
+            "isRereading": false
+        },
         {
             "date": "2023-12-28",
             "review": "前巻のマイステューデントを読んで続きが気になったので一気に読んだ。今回は霧島透子、改め岩見沢寧々の思春期症候群の回。何者かになりたい、何者かでなくてはならない、という悩み自体は自分自身も通ったことがあるので共感しながら読めた。後半はミステリーサスペンスのような緊迫感のある読み味で、ページが止まらず深夜過ぎに最後まで読み切ってしまった。いよいよ最終章突入らしく、次巻も楽しみ。",
@@ -10898,5 +10922,5 @@
             "isRereading": false
         }
     ],
-    "totalPages": 280670
+    "totalPages": 281263
 }
