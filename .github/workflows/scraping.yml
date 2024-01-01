@@ -16,8 +16,6 @@ jobs:
       - uses: actions/checkout@v3
       - name: setup chromedriver
         uses: nanasess/setup-chromedriver@v2
-        with:
-          chromerdriver-version: '115.0.5790.102'
       - name: setup JDK 17
         uses: actions/setup-java@v3
         with:
