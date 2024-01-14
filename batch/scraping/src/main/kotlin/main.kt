@@ -11,7 +11,7 @@ import java.io.InvalidObjectException
 import java.security.InvalidParameterException
 
 @DelicateCoroutinesApi
-suspend fun main(args: Array<String>) {
+suspend fun main(args: Array<String>) = runBlocking {
     val userId = args.first().toInt()
     val webDriver = WebDriver()
     val fetchPagesService = PageRepository(userId, webDriver)
