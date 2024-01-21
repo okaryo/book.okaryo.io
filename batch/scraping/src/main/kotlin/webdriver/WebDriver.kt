@@ -19,6 +19,6 @@ class WebDriver {
     }
 
     fun close() {
-        driver.close()
+        driver.quit()
     }
 }

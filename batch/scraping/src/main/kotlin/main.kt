@@ -10,6 +10,7 @@ import java.io.File
 import java.io.InvalidObjectException
 import java.security.InvalidParameterException
 
+@DelicateCoroutinesApi
 suspend fun main(args: Array<String>) {
     val userId = args.first().toInt()
     val webDriver = WebDriver()
