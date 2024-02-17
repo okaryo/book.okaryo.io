@@ -1,6 +1,30 @@
 {
-    "recordsCount": 920,
+    "recordsCount": 922,
     "records": [
+        {
+            "date": "2024-02-16",
+            "review": "Audibleにて。ついにインドを抜けて、パキスタン、アフガニスタン、イランとシルクロードをバスでどんどん進んでいく。現在はこんなに気安くそれらの国を通り抜けられるんだろうか。モスクでの人々の祈りの声、旅人同士での本の交換という文化には感じ入ってしまった。地名が出るたびにGoogleMapやWikipediaで調べてみているが、ペルシャの遺跡は物理的なスケールも時代的な深みもあって圧倒された。いつか自分もシルクロードを横断してみたいな。",
+            "book": {
+                "author": {"name": "沢木 耕太郎"},
+                "page": 240,
+                "title": "深夜特急4ーシルクロードー〈文字拡大増補新版〉 (新潮文庫)",
+                "url": "https://www.amazon.co.jp/dp/product/4101235317/ref=as_li_tf_tl?camp=247&creative=1211&creativeASIN=4101235317&ie=UTF8&linkCode=as2&tag=bookmeter_book_image_image_pc_logoff-22"
+            },
+            "format": "Audible",
+            "isRereading": false
+        },
+        {
+            "date": "2024-02-09",
+            "review": "Audibleにて。最近独立を考えていて読んだ。起業というと大きな壁のように感じてしまうが、小さく一歩ずつ階段を登っていく行動が大事だと教えてくれる。組織の運営もそうだけど起業もソフトウェア開発に通じるものがあるなと感じる。この本を読んでやる気ももらったが、同じくこの本に書いてある通り行動が大事なので実行していきたい。",
+            "book": {
+                "author": {"name": "今井 孝"},
+                "page": 288,
+                "title": "起業1年目の教科書",
+                "url": "https://www.amazon.co.jp/dp/product/4761270888/ref=as_li_tf_tl?camp=247&creative=1211&creativeASIN=4761270888&ie=UTF8&linkCode=as2&tag=bookmeter_book_image_image_pc_logoff-22"
+            },
+            "format": "Audible",
+            "isRereading": false
+        },
         {
             "date": "2024-02-03",
             "review": "誕生日が一緒なので勝手な親近感を抱いているしマルチタレントで尊敬もしているビートたけしさんの新刊。ちょうど人生の転換点を考えている際に目に留まったので読んでみた。もともと工学部なのは存じ上げなかったがたくさんの知識を今でもキャッチアップしてるんだなと実感。たけしさんらしい優しい言葉でそのままの人生でも幸せだと語ってくれる。自分自身も大学生のときに夢を持て成功しろという人生の正解みたいな無言の圧力に生き方が分からなくなり休学したし、今もたまに流されてしまいそうになるけど今のままで良いんだと再確認できた。",
@@ -11042,5 +11066,5 @@
             "isRereading": false
         }
     ],
-    "totalPages": 284163
+    "totalPages": 284691
 }
