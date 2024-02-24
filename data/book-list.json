@@ -1,6 +1,30 @@
 {
-    "recordsCount": 922,
+    "recordsCount": 924,
     "records": [
+        {
+            "date": "2024-02-23",
+            "review": "Audibleにて。著者のジェーン・スー氏を存じ上げず、外国の人かと思っていたら最初に東京生まれとあって驚いた。自分の父はこんなに愉快で大好きなんだ、みたいなエッセイだと思っていたら、途中からちゃんと父のダメな部分も書いてある。それでもそんな父も好きだというのが伝わってくる。自分の家族について語ったエッセイをあんまり今まで読んでこなかったので新鮮だったし、いろんな家族の在り方や人生があるのを改めて感じたし、自分の家族も大好きだけどいつか別れがあって、改めて今を大事に家族に感謝を伝え続けていこうと思った。",
+            "book": {
+                "author": {"name": "ジェーン・スー"},
+                "page": 0,
+                "title": "生きるとか死ぬとか父親とか",
+                "url": "https://www.amazon.co.jp/dp/product/B0CP8XWH4C/ref=as_li_tf_tl?camp=247&creative=1211&creativeASIN=B0CP8XWH4C&ie=UTF8&linkCode=as2&tag=bookmeter_book_image_image_pc_logoff-22"
+            },
+            "format": "Audible",
+            "isRereading": false
+        },
+        {
+            "date": "2024-02-18",
+            "review": "Audibleにて。吉本ばななさんの本ということで聴いてみた。たまにスピリチュアルな部分があるのが気になったが、自己受容や周りにある現在の幸せに目を向けるという点は自分と似た考えでほっこりするような内容だった。なぜか心に残ったのは、最近はSNS等で自分の体験や言葉を公開しがちであるが、そういうのは外に出さずに自分の中にしまっておく、そうすれば熟成してくる、というもの。作家さんならではの感覚で面白いと思ったし、確かにすぐさま外に出してしまうと言葉や体験が軽くなってしまうなとも感じた。",
+            "book": {
+                "author": {"name": "吉本 ばなな"},
+                "page": 0,
+                "title": "幸せへのセンサー",
+                "url": "https://www.amazon.co.jp/dp/product/B0CNX9C8DW/ref=as_li_tf_tl?camp=247&creative=1211&creativeASIN=B0CNX9C8DW&ie=UTF8&linkCode=as2&tag=bookmeter_book_image_image_pc_logoff-22"
+            },
+            "format": "Audible",
+            "isRereading": false
+        },
         {
             "date": "2024-02-16",
             "review": "Audibleにて。ついにインドを抜けて、パキスタン、アフガニスタン、イランとシルクロードをバスでどんどん進んでいく。現在はこんなに気安くそれらの国を通り抜けられるんだろうか。モスクでの人々の祈りの声、旅人同士での本の交換という文化には感じ入ってしまった。地名が出るたびにGoogleMapやWikipediaで調べてみているが、ペルシャの遺跡は物理的なスケールも時代的な深みもあって圧倒された。いつか自分もシルクロードを横断してみたいな。",
