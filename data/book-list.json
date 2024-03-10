@@ -1,6 +1,210 @@
 {
-    "recordsCount": 912,
+    "recordsCount": 929,
     "records": [
+        {
+            "date": "2024-03-07",
+            "review": "Audibleにて。マーケティングの本かと思って読み始めたら思考やアイディアを広げたり深めたりする本だった。考える技術がブルーオーシャンという意見については分かるような情けないような気持ちがあったが、思えば人類が思考に向き合ってきたのは過去の哲学者を除けばここ数百年なのかと思った。脱二択やポジティブ化、ずらして考える、しっかり深く考える時間をとる、など参考になることがたくさんあった。",
+            "book": {
+                "author": {"name": "柿内 尚文"},
+                "page": 272,
+                "title": "パン屋ではおにぎりを売れ 想像以上の答えが見つかる思考法　地味だけど一生役立つ「考える技術」",
+                "url": "https://www.amazon.co.jp/dp/product/4761274999/ref=as_li_tf_tl?camp=247&creative=1211&creativeASIN=4761274999&ie=UTF8&linkCode=as2&tag=bookmeter_book_image_image_pc_logoff-22"
+            },
+            "format": "Audible",
+            "isRereading": false
+        },
+        {
+            "date": "2024-03-04",
+            "review": "先日『老子』を読んで良かったのでこれ系の本をもう1冊読みたいと思って購入。高校の最初の合宿で中庸の「誠は天の道なり」の箇所を暗唱させられた馴染みで選んだが、思えば中庸を最初から最後まで読んだことはなかった。老荘思想を虚無主義、仏教を寂滅主義と言っていたのは『老子』を読んだばかりなのもあって面白かった。いくら昔の話とはいえ、法学や経済、科学ではなく道徳で国家を治めようとしていたのは社会がシンプルだったからなのだろうか。とはいえ天下を平らかにするべくまず自分の身を修めるための今も示唆に富む言葉が多かった。",
+            "book": {
+                "author": {"name": "朱子,金谷 治"},
+                "page": 270,
+                "title": "大学・中庸 (岩波文庫)",
+                "url": "https://www.amazon.co.jp/dp/product/4003322215/ref=as_li_tf_tl?camp=247&creative=1211&creativeASIN=4003322215&ie=UTF8&linkCode=as2&tag=bookmeter_book_image_image_pc_logoff-22"
+            },
+            "format": "Paper",
+            "isRereading": false
+        },
+        {
+            "date": "2024-03-03",
+            "review": "Audibleにて。世の中の運が良くなる方法を科学的に解説を試みる本かと思って読み始めたらバチバチのスピリチュアル本だった。独自の宇宙の法則をもとに話が展開されており、自分の科学観とは合わず何度も聴くのをやめようと思ったが社会勉強だと思って聴き通した。とはいえ感じたこととして、表情や性格、身なりが悪い、部屋が汚い、悪い人との付き合いがある、そんな人がそれを改善すれば社会的にも衛生的にも良くなるだろうし、独自の宇宙観とはいえそれを信じる人たちに行動を促すのであればスピリチュアルも悪くないのかなと思った。",
+            "book": {
+                "author": {"name": "櫻庭露樹"},
+                "page": 240,
+                "title": "世の中の運がよくなる方法を試してみた (運を引き寄せる実験)",
+                "url": "https://www.amazon.co.jp/dp/product/4866800690/ref=as_li_tf_tl?camp=247&creative=1211&creativeASIN=4866800690&ie=UTF8&linkCode=as2&tag=bookmeter_book_image_image_pc_logoff-22"
+            },
+            "format": "Audible",
+            "isRereading": false
+        },
+        {
+            "date": "2024-01-27",
+            "review": "ストレスと上手く向き合うにはいろんな人の考え方を知るといいよと技術顧問の方に勧められて読んだ。81章あるが最初から最後まで無為自然の考えを貫いているので割と読みやすいのではないか。理想論に感じて全てを受け入れられたわけではないが、美があるから醜があり善があるから悪があるというような考え方はいろんな考え方を見つめ直すきっかけになりそうだった。また、水のような柔弱なものが強いという考え方はチームや組織、ソフトウェアにも通じる考え方だなと思った。こういった思想をどうやって生み出したんだろう。",
+            "book": {
+                "author": {"name": "老子"},
+                "page": 453,
+                "title": "老子 (岩波文庫 青 205-1)",
+                "url": "https://www.amazon.co.jp/dp/product/4003320514/ref=as_li_tf_tl?camp=247&creative=1211&creativeASIN=4003320514&ie=UTF8&linkCode=as2&tag=bookmeter_book_image_image_pc_logoff-22"
+            },
+            "format": "Paper",
+            "isRereading": false
+        },
+        {
+            "date": "2023-12-29",
+            "review": "夏の東北旅行で秋田もと考えて購入していたが、結局時間の都合で予定から外したので詰んでいた。来年の2月にリベンジで秋田に行こうと思い読み始めた。菅原真澄、狩野亨吉、安藤昌益、内藤湖南など魅力的な人物を多数・同時代的に生み出した秋田という土地。飛騨においては、山国で高冷なために土地の生産性が低いからこそ良い酒のように文化が沈澱し熟成し今ではかえって新鮮なのではないか、という記述はとても美しかった。",
+            "book": {
+                "author": {"name": "司馬 遼太郎"},
+                "page": 352,
+                "title": "街道をゆく 29 秋田県散歩、飛騨紀行 (朝日文庫 し 1-85)",
+                "url": "https://www.amazon.co.jp/dp/product/4022644834/ref=as_li_tf_tl?camp=247&creative=1211&creativeASIN=4022644834&ie=UTF8&linkCode=as2&tag=bookmeter_book_image_image_pc_logoff-22"
+            },
+            "format": "Paper",
+            "isRereading": false
+        },
+        {
+            "date": "2024-02-23",
+            "review": "Audibleにて。著者のジェーン・スー氏を存じ上げず、外国の人かと思っていたら最初に東京生まれとあって驚いた。自分の父はこんなに愉快で大好きなんだ、みたいなエッセイだと思っていたら、途中からちゃんと父のダメな部分も書いてある。それでもそんな父も好きだというのが伝わってくる。自分の家族について語ったエッセイをあんまり今まで読んでこなかったので新鮮だったし、いろんな家族の在り方や人生があるのを改めて感じたし、自分の家族も大好きだけどいつか別れがあって、改めて今を大事に家族に感謝を伝え続けていこうと思った。",
+            "book": {
+                "author": {"name": "ジェーン・スー"},
+                "page": 0,
+                "title": "生きるとか死ぬとか父親とか",
+                "url": "https://www.amazon.co.jp/dp/product/B0CP8XWH4C/ref=as_li_tf_tl?camp=247&creative=1211&creativeASIN=B0CP8XWH4C&ie=UTF8&linkCode=as2&tag=bookmeter_book_image_image_pc_logoff-22"
+            },
+            "format": "Audible",
+            "isRereading": false
+        },
+        {
+            "date": "2024-02-18",
+            "review": "Audibleにて。吉本ばななさんの本ということで聴いてみた。たまにスピリチュアルな部分があるのが気になったが、自己受容や周りにある現在の幸せに目を向けるという点は自分と似た考えでほっこりするような内容だった。なぜか心に残ったのは、最近はSNS等で自分の体験や言葉を公開しがちであるが、そういうのは外に出さずに自分の中にしまっておく、そうすれば熟成してくる、というもの。作家さんならではの感覚で面白いと思ったし、確かにすぐさま外に出してしまうと言葉や体験が軽くなってしまうなとも感じた。",
+            "book": {
+                "author": {"name": "吉本 ばなな"},
+                "page": 0,
+                "title": "幸せへのセンサー",
+                "url": "https://www.amazon.co.jp/dp/product/B0CNX9C8DW/ref=as_li_tf_tl?camp=247&creative=1211&creativeASIN=B0CNX9C8DW&ie=UTF8&linkCode=as2&tag=bookmeter_book_image_image_pc_logoff-22"
+            },
+            "format": "Audible",
+            "isRereading": false
+        },
+        {
+            "date": "2024-02-16",
+            "review": "Audibleにて。ついにインドを抜けて、パキスタン、アフガニスタン、イランとシルクロードをバスでどんどん進んでいく。現在はこんなに気安くそれらの国を通り抜けられるんだろうか。モスクでの人々の祈りの声、旅人同士での本の交換という文化には感じ入ってしまった。地名が出るたびにGoogleMapやWikipediaで調べてみているが、ペルシャの遺跡は物理的なスケールも時代的な深みもあって圧倒された。いつか自分もシルクロードを横断してみたいな。",
+            "book": {
+                "author": {"name": "沢木 耕太郎"},
+                "page": 240,
+                "title": "深夜特急4ーシルクロードー〈文字拡大増補新版〉 (新潮文庫)",
+                "url": "https://www.amazon.co.jp/dp/product/4101235317/ref=as_li_tf_tl?camp=247&creative=1211&creativeASIN=4101235317&ie=UTF8&linkCode=as2&tag=bookmeter_book_image_image_pc_logoff-22"
+            },
+            "format": "Audible",
+            "isRereading": false
+        },
+        {
+            "date": "2024-02-09",
+            "review": "Audibleにて。最近独立を考えていて読んだ。起業というと大きな壁のように感じてしまうが、小さく一歩ずつ階段を登っていく行動が大事だと教えてくれる。組織の運営もそうだけど起業もソフトウェア開発に通じるものがあるなと感じる。この本を読んでやる気ももらったが、同じくこの本に書いてある通り行動が大事なので実行していきたい。",
+            "book": {
+                "author": {"name": "今井 孝"},
+                "page": 288,
+                "title": "起業1年目の教科書",
+                "url": "https://www.amazon.co.jp/dp/product/4761270888/ref=as_li_tf_tl?camp=247&creative=1211&creativeASIN=4761270888&ie=UTF8&linkCode=as2&tag=bookmeter_book_image_image_pc_logoff-22"
+            },
+            "format": "Audible",
+            "isRereading": false
+        },
+        {
+            "date": "2024-02-03",
+            "review": "誕生日が一緒なので勝手な親近感を抱いているしマルチタレントで尊敬もしているビートたけしさんの新刊。ちょうど人生の転換点を考えている際に目に留まったので読んでみた。もともと工学部なのは存じ上げなかったがたくさんの知識を今でもキャッチアップしてるんだなと実感。たけしさんらしい優しい言葉でそのままの人生でも幸せだと語ってくれる。自分自身も大学生のときに夢を持て成功しろという人生の正解みたいな無言の圧力に生き方が分からなくなり休学したし、今もたまに流されてしまいそうになるけど今のままで良いんだと再確認できた。",
+            "book": {
+                "author": {"name": "北野 武"},
+                "page": 232,
+                "title": "人生に期待するな",
+                "url": "https://www.amazon.co.jp/dp/product/4594092705/ref=as_li_tf_tl?camp=247&creative=1211&creativeASIN=4594092705&ie=UTF8&linkCode=as2&tag=bookmeter_book_image_image_pc_logoff-22"
+            },
+            "format": "Paper",
+            "isRereading": false
+        },
+        {
+            "date": "2024-01-27",
+            "review": "Audibleにて。インド・ネパール回。実際に旅をするのとでは違うだろうが、日常の何気ないことや考えたことについても記述してくれているので旅を追体験しているような気分になれる。貧困、売春、差別、死体焼き場、病気、同室人の優しさ、うまいカップヌードル、怖い気持ちもある一方でいつか自分も自分の目で見てみたい気持ちがある。普段の生活にはない外国の新鮮さという魅力を感じつつ、おそらく日本にいても目線を変えれば新しい発見はあるだろうしブリーズ・イズ・ナイスを感じられるんじゃないかと日常を見つめ直してみようと思った。",
+            "book": {
+                "author": {"name": "沢木 耕太郎"},
+                "page": 272,
+                "title": "深夜特急3ーインド・ネパールー〈文字拡大増補新版〉 (新潮文庫)",
+                "url": "https://www.amazon.co.jp/dp/product/4101235309/ref=as_li_tf_tl?camp=247&creative=1211&creativeASIN=4101235309&ie=UTF8&linkCode=as2&tag=bookmeter_book_image_image_pc_logoff-22"
+            },
+            "format": "Audible",
+            "isRereading": false
+        },
+        {
+            "date": "2024-01-27",
+            "review": "ストレスと上手く向き合うにはいろんな人の考え方を知るといいよと技術顧問の方に勧められて読んだ。81章あるが最初から最後まで無為自然の考えを貫いているので割と読みやすいのではないか。理想論に感じて全てを受け入れられたわけではないが、美があるから醜があり善があるから悪があるというような考え方はいろんな考え方を見つめ直すきっかけになりそうだった。また、水のような柔弱なものが強いという考え方はチームや組織、ソフトウェアにも通じる考え方だなと思った。こういった思想をどうやって生み出したんだろう。",
+            "book": {
+                "author": {"name": "老子"},
+                "page": 453,
+                "title": "老子 (岩波文庫)",
+                "url": "https://www.amazon.co.jp/dp/product/4003320514/ref=as_li_tf_tl?camp=247&creative=1211&creativeASIN=4003320514&ie=UTF8&linkCode=as2&tag=bookmeter_book_image_image_pc_logoff-22"
+            },
+            "format": "Paper",
+            "isRereading": false
+        },
+        {
+            "date": "2024-01-20",
+            "review": "昨年から芽生えた民俗学への興味から買って読んでみたが、自分にはまだ早かったようでかなり読むのがしんどかった。自分が思っていたよりも過酷だった当時のムラとそこから生まれた信仰について面白いと思いながら読んだ部分もあったが、全体を通して一定の民俗学やその歴史についての知識を前提としているようで、自分はまだそのレベルには達していなかったと感じる。とはいえ特に深刻になる必要もないので、引き続き自分の興味に従って面白そうな民俗学のトピックを拾ってゆき、いつかこの本も面白く読めるようになれたらいいな。",
+            "book": {
+                "author": {"name": "高取 正男"},
+                "page": 384,
+                "title": "宗教民俗学 (法蔵館文庫)",
+                "url": "https://www.amazon.co.jp/dp/product/4831826537/ref=as_li_tf_tl?camp=247&creative=1211&creativeASIN=4831826537&ie=UTF8&linkCode=as2&tag=bookmeter_book_image_image_pc_logoff-22"
+            },
+            "format": "Paper",
+            "isRereading": false
+        },
+        {
+            "date": "2024-01-14",
+            "review": "ファッションの勉強の一環として、たくさんのパターンを知っておこうと思って購入。ストリートスナップなので奇抜なものや高級そうなものも多く、服のパターンとしてはあまり参考にはならなかったものの、自分も歳を取ったらこんなカッコいい大人になりたいと改めて強く思った。同時に感じたが、カッコいい大人は歳を取ったら自動的になれるものではなく、それまでの試行錯誤や努力があってこそだと感じたし、そのためには今のうちから自分もそれに向かって努力しなければと思わされた。",
+            "book": {
+                "author": {"name": "スコット・シューマン"},
+                "page": 306,
+                "title": "サルトリアリスト メンズ・ファッション ストリートスナップから学ぶ基礎と応用",
+                "url": "https://www.amazon.co.jp/dp/product/4766134818/ref=as_li_tf_tl?camp=247&creative=1211&creativeASIN=4766134818&ie=UTF8&linkCode=as2&tag=bookmeter_book_image_image_pc_logoff-22"
+            },
+            "format": "Paper",
+            "isRereading": false
+        },
+        {
+            "date": "2024-01-13",
+            "review": "今年婚活に取り組むにあたり、今まで向き合って来なかったファッションを知っておこうと思い読んだ。全体的にシンプルでユニクロ推しだったが、自分もシンプルなものが好きだしユニクロで良いんだと自信を持てたので良かった。また、服以外にもその周辺の小物の紹介もあり、いつか余裕が出てきたときにその辺りも気をつけられるようになりたい。",
+            "book": {
+                "author": {"name": "晋遊舎"},
+                "page": 0,
+                "title": "【完全ガイドシリーズ335】メンズファッション完全ガイド (100%ムックシリーズ)",
+                "url": "https://www.amazon.co.jp/dp/product/4801817564/ref=as_li_tf_tl?camp=247&creative=1211&creativeASIN=4801817564&ie=UTF8&linkCode=as2&tag=bookmeter_book_image_image_pc_logoff-22"
+            },
+            "format": "Paper",
+            "isRereading": false
+        },
+        {
+            "date": "2024-01-13",
+            "review": "今年は婚活をしようと思い、今までちゃんと向き合って来なかったファッションを知るために読んだ。IラインやYライン、色の合わせ方などファッションにおいても理論的に押さえられるところもあるんだなと感心した。Webデザインの本を読んだときにも感じたが、今までセンスとして敬遠していたものもちゃんと理論があるんだと。また、巻末にファッション用語解説もあったのもポイントが高く、その分野における語彙を増やすことは解像度の向上にもなって良かった。",
+            "book": {
+                "author": {"name": "MB"},
+                "page": 143,
+                "title": "メンズファッションの解剖図鑑",
+                "url": "https://www.amazon.co.jp/dp/product/4767822386/ref=as_li_tf_tl?camp=247&creative=1211&creativeASIN=4767822386&ie=UTF8&linkCode=as2&tag=bookmeter_book_image_image_pc_logoff-22"
+            },
+            "format": "Paper",
+            "isRereading": false
+        },
+        {
+            "date": "2024-01-12",
+            "review": "去年からストレスマネジメントの向上を意識していたところに本屋で見つけた集大成のような本。カウンセリングで教えていただいた認知行動療法のメソッドが各所で紹介されているし、他のアプローチについても触れられている。本の構成としてはやる気が出ないとき・自信をなくしているとき・ストレスを感じているとき、など状況ごとに章立てされていて今後もリファレンスとして使えそう。メンタルマネジメントは必要になってから知るよりも事前に知っておいた方が良いと思うのでこういった網羅的な本を見つけられて良かった。",
+            "book": {
+                "author": {"name": "ジュリー・スミス"},
+                "page": 368,
+                "title": "一番大切なのに誰も教えてくれない メンタルマネジメント大全",
+                "url": "https://www.amazon.co.jp/dp/product/4309300243/ref=as_li_tf_tl?camp=247&creative=1211&creativeASIN=4309300243&ie=UTF8&linkCode=as2&tag=bookmeter_book_image_image_pc_logoff-22"
+            },
+            "format": "Paper",
+            "isRereading": false
+        },
         {
             "date": "2024-01-05",
             "review": "Audibleにて。自分にはあまり刺さらなかった。フィクションであることは分かりつつも、主人公の現実に不満を持ちつつも文句ばかりで具体的な行動があまりないことや、不安定な感情を表情に出して周囲に心配させる子供っぽさに少し距離感を持ってしまい物語にイマイチ入りきることができなかった。一方で、書店を中心とした書店員の働き方を知ることができた点では面白かった。",
@@ -10946,5 +11150,5 @@
             "isRereading": false
         }
     ],
-    "totalPages": 282005
+    "totalPages": 286278
 }
