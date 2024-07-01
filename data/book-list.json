@@ -1,6 +1,18 @@
 {
-    "recordsCount": 953,
+    "recordsCount": 954,
     "records": [
+        {
+            "date": "2024-06-29",
+            "review": "Audibleにて。",
+            "book": {
+                "author": {"name": "藤原 裕"},
+                "page": 208,
+                "title": "日本人が見出したヴィンテージの価値 教養としてのデニム",
+                "url": "https://www.amazon.co.jp/dp/product/4048971883/ref=as_li_tf_tl?camp=247&creative=1211&creativeASIN=4048971883&ie=UTF8&linkCode=as2&tag=bookmeter_book_image_image_pc_logoff-22"
+            },
+            "format": "Audible",
+            "isRereading": false
+        },
         {
             "date": "2024-06-11",
             "review": "ちょうどクラウド周りを触っていて原則に則った設計ができているか気になったので読んでみた。Azureのアーキテクチャガイドの10の設計原則を元に解説している。AWSのWell-Architectedは知っていたが、Azureにも同様のものがあったのは知らなかった。Azureのガイドを解説しているとはいえ、その内容はAzureを知らなくても通用する設計原則であり、スケールアウト、分割や運用の話は参考になった。特に、ビジネスニーズを見失わないような設計・運用をしていきたいと改めて意識した。",
@@ -11438,5 +11450,5 @@
             "isRereading": false
         }
     ],
-    "totalPages": 292433
+    "totalPages": 292641
 }
