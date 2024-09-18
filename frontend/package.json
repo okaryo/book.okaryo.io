@@ -19,17 +19,17 @@
     "recharts": "2.12.7"
   },
   "devDependencies": {
-    "@types/jest": "^29.5.12",
-    "@types/node": "^20.14.13",
-    "@types/react": "^18.3.3",
+    "@types/jest": "^29.5.13",
+    "@types/node": "^20.16.5",
+    "@types/react": "^18.3.7",
     "@types/recharts": "^1.8.29",
     "@typescript-eslint/eslint-plugin": "^7.18.0",
     "@typescript-eslint/parser": "^7.18.0",
-    "eslint": "^8.57.0",
-    "eslint-config-next": "^14.2.5",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "^14.2.12",
     "eslint-plugin-autofix": "^1.1.0",
     "jest": "^29.7.0",
-    "ts-jest": "^29.2.3",
-    "typescript": "^5.5.4"
+    "ts-jest": "^29.2.5",
+    "typescript": "^5.6.2"
   }
 }
