@@ -16,11 +16,10 @@ jobs:
       - uses: actions/checkout@v4
       - name: setup chromedriver
         uses: nanasess/setup-chromedriver@v2
-      - name: setup JDK 19
-        uses: actions/setup-java@v4
+      - uses: actions/setup-java@v4
         with:
-          java-version: '19'
-          distribution: 'adopt'
+          java-version: '21'
+          distribution: 'temurin'
       - name: build with Gradle
         run: ./gradlew build
       - name: run with Gradle and generate json
