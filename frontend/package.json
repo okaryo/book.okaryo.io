@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "@types/jest": "^29.5.13",
-    "@types/node": "^20.16.12",
+    "@types/node": "^20.16.13",
     "@types/react": "^18.3.11",
     "@types/recharts": "^1.8.29",
     "@typescript-eslint/eslint-plugin": "^7.18.0",
