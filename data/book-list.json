@@ -1,6 +1,18 @@
 {
-    "recordsCount": 959,
+    "recordsCount": 960,
     "records": [
+        {
+            "date": "2024-11-20",
+            "review": "Audibleにて。個人事業でOKRを使用しているがそれをブラッシュアップしたくて読んだ。KPIは知っているつもりだったが、設定するのは一つだけというのは初耳だった。また、本筋ではないがリクルートのTTP(徹底的にパクる)、TTPS(徹底的にパクって進化させる)という標語はとてもいいなと感じた。",
+            "book": {
+                "author": {"name": "中尾隆一郎"},
+                "page": 244,
+                "title": "最高の結果を出すKPIマネジメント",
+                "url": "https://www.amazon.co.jp/dp/product/4894519844/ref=as_li_tf_tl?camp=247&creative=1211&creativeASIN=4894519844&ie=UTF8&linkCode=as2&tag=bookmeter_book_image_image_pc_logoff-22"
+            },
+            "format": "Audible",
+            "isRereading": false
+        },
         {
             "date": "2024-11-02",
             "review": "Audibleにて。リアルな生き物系のガチャガチャが好きでコロナ前から回していたが、最近は1,000円のプレミアガチャがあったり、専門店が出てきたりと実際の肌感覚としてガチャガチャが伸びているのを感じていたので読んでみた。自分が思っていた以上にガチャガチャの市場規模は大きく、今後も伸びていく期待があるのは驚いた。何が出るか分からないものを回して楽しむというという体験のコト消費はくじ引きという歴史もあり、小さなギャンブルに慣れている日本人の文化や国民性という視点はなるほどと思った。",
@@ -11510,5 +11522,5 @@
             "isRereading": false
         }
     ],
-    "totalPages": 293863
+    "totalPages": 294107
 }
