@@ -1,6 +1,18 @@
 {
-    "recordsCount": 960,
+    "recordsCount": 961,
     "records": [
+        {
+            "date": "2024-11-22",
+            "review": "Audibleにて。静かな退職という言葉があるのを最近知ったので気になって読んでみた。挑戦や責任から逃れたり、仕事の中に成長や楽しみを見出していない人たちのことを少し冷ややかな目で見ていた面が自分の中にあったが、過半数以上の人たちがそうであるという現実に悲しさの方が大きくなった。本書で紹介されているいい子症候群、若者における知識やスキルのファストフード化はなるほどと感じた。",
+            "book": {
+                "author": {"name": "金間 大介"},
+                "page": 336,
+                "title": "静かに退職する若者たち 部下との1on1の前に知っておいてほしいこと",
+                "url": "https://www.amazon.co.jp/dp/product/4569856527/ref=as_li_tf_tl?camp=247&creative=1211&creativeASIN=4569856527&ie=UTF8&linkCode=as2&tag=bookmeter_book_image_image_pc_logoff-22"
+            },
+            "format": "Audible",
+            "isRereading": false
+        },
         {
             "date": "2024-11-20",
             "review": "Audibleにて。個人事業でOKRを使用しているがそれをブラッシュアップしたくて読んだ。KPIは知っているつもりだったが、設定するのは一つだけというのは初耳だった。また、本筋ではないがリクルートのTTP(徹底的にパクる)、TTPS(徹底的にパクって進化させる)という標語はとてもいいなと感じた。",
@@ -11522,5 +11534,5 @@
             "isRereading": false
         }
     ],
-    "totalPages": 294107
+    "totalPages": 294443
 }
