@@ -21,7 +21,7 @@
   "devDependencies": {
     "@types/jest": "^29.5.14",
     "@types/node": "^22.10.1",
-    "@types/react": "^18.3.12",
+    "@types/react": "^19.0.1",
     "@types/recharts": "^1.8.29",
     "@typescript-eslint/eslint-plugin": "^8.17.0",
     "@typescript-eslint/parser": "^8.17.0",
