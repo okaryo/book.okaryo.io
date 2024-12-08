@@ -15,7 +15,7 @@ class WebDriver {
 
     fun getPageSource(url: String): String {
         driver.get(url)
-        return driver.pageSource
+        return driver.pageSource ?: ""
     }
 
     fun close() {
